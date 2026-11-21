@@ -1,0 +1,145 @@
+[
+ {
+  "marca": "MSYS Imob",
+  "dominio": "lp.msysimob.com.br",
+  "anuncios": 30,
+  "diasMaisVelho": 279,
+  "diasMediana": 64,
+  "variacoesMax": 5,
+  "variacoesSoma": 55,
+  "sustentado": true,
+  "escala": 512.4
+ },
+ {
+  "marca": "WebPsi - Gestor de consultório e criador de sites",
+  "dominio": "webpsi.com.br",
+  "anuncios": 30,
+  "diasMaisVelho": 138,
+  "diasMediana": 37,
+  "variacoesMax": 2,
+  "variacoesSoma": 34,
+  "sustentado": true,
+  "escala": 364.8
+ },
+ {
+  "marca": "Jusfy Tecnologia",
+  "dominio": "jusfy.com.br",
+  "anuncios": 30,
+  "diasMaisVelho": 47,
+  "diasMediana": 18,
+  "variacoesMax": 5,
+  "variacoesSoma": 42,
+  "sustentado": false,
+  "escala": 334.2
+ },
+ {
+  "marca": "CODE 49 Brasil",
+  "dominio": "code49.com.br",
+  "anuncios": 15,
+  "diasMaisVelho": 117,
+  "diasMediana": 66,
+  "variacoesMax": 2,
+  "variacoesSoma": 21,
+  "sustentado": true,
+  "escala": 223.2
+ },
+ {
+  "marca": "Imóvel Guide",
+  "dominio": "oferta.imovelguide.com.br",
+  "anuncios": 13,
+  "diasMaisVelho": 17,
+  "diasMediana": 6,
+  "variacoesMax": 1,
+  "variacoesSoma": 13,
+  "sustentado": false,
+  "escala": 127.2
+ },
+ {
+  "marca": "FREEL",
+  "dominio": "freel.com.br",
+  "anuncios": 8,
+  "diasMaisVelho": 29,
+  "diasMediana": 11,
+  "variacoesMax": 1,
+  "variacoesSoma": 8,
+  "sustentado": false,
+  "escala": 89.4
+ },
+ {
+  "marca": "Superadmin",
+  "dominio": "superadmin.ia.br",
+  "anuncios": 4,
+  "diasMaisVelho": 54,
+  "diasMediana": 44,
+  "variacoesMax": 2,
+  "variacoesSoma": 6,
+  "sustentado": false,
+  "escala": 74.4
+ },
+ {
+  "marca": "Rentup Sistema Imobiliário",
+  "dominio": "rentupimob.com.br",
+  "anuncios": 5,
+  "diasMaisVelho": 11,
+  "diasMediana": 11,
+  "variacoesMax": 1,
+  "variacoesSoma": 5,
+  "sustentado": false,
+  "escala": 51.6
+ },
+ {
+  "marca": "Psicoflow",
+  "dominio": "fluven.esaas.io",
+  "anuncios": 3,
+  "diasMaisVelho": 32,
+  "diasMediana": 32,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 46.2
+ },
+ {
+  "marca": "Brovia",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 1,
+  "diasMaisVelho": 12,
+  "diasMediana": 12,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 16.2
+ },
+ {
+  "marca": "Imopage",
+  "dominio": "imopage.com.br",
+  "anuncios": 1,
+  "diasMaisVelho": 5,
+  "diasMediana": 5,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 12
+ },
+ {
+  "marca": "EnzoGomes",
+  "dominio": null,
+  "anuncios": 1,
+  "diasMaisVelho": 4,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 11.4
+ },
+ {
+  "marca": "Betel Digital ",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 1,
+  "diasMaisVelho": 1,
+  "diasMediana": 1,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 9.6
+ }
+]

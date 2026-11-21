@@ -1,0 +1,134 @@
+{
+ "geradoEm": "2026-11-21T01:31:37.315Z",
+ "escopo": "país a país, somente status \"active\"",
+ "fonte": "Biblioteca pública (raspagem)",
+ "linhas": [
+  {
+   "termo": "site para dentistas",
+   "pais": "BR",
+   "total": 330,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para advogados",
+   "pais": "BR",
+   "total": 880,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para psicólogos",
+   "pais": "BR",
+   "total": 330,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para clínicas",
+   "pais": "BR",
+   "total": 1600,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para médicos",
+   "pais": "BR",
+   "total": 1800,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para nutricionistas",
+   "pais": "BR",
+   "total": 160,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para restaurantes",
+   "pais": "BR",
+   "total": 1100,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para imobiliárias",
+   "pais": "BR",
+   "total": 520,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para corretores",
+   "pais": "BR",
+   "total": 540,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para salão de beleza",
+   "pais": "BR",
+   "total": 350,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para fotógrafos",
+   "pais": "BR",
+   "total": 110,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para personal trainer",
+   "pais": "BR",
+   "total": 61,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para contadores",
+   "pais": "BR",
+   "total": 99,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para arquitetos",
+   "pais": "BR",
+   "total": 310,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para igrejas",
+   "pais": "BR",
+   "total": 240,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para fisioterapeutas",
+   "pais": "BR",
+   "total": 99,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para esteticistas",
+   "pais": "BR",
+   "total": 23,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site para oficinas",
+   "pais": "BR",
+   "total": 340,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  }
+ ],
+ "aviso": "Números de escopos diferentes NÃO podem ser comparados entre si."
+}

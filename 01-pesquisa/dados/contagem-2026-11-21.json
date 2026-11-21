@@ -1,0 +1,29 @@
+{
+ "geradoEm": "2026-11-21T01:27:03.918Z",
+ "escopo": "país a país, somente status \"active\"",
+ "fonte": "Biblioteca pública (raspagem)",
+ "linhas": [
+  {
+   "termo": "criação de sites",
+   "pais": "BR",
+   "total": 1800,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "site profissional",
+   "pais": "BR",
+   "total": 15000,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  },
+  {
+   "termo": "landing page",
+   "pais": "BR",
+   "total": 2900,
+   "escopo": "BR/active",
+   "fonte": "Biblioteca pública (raspagem)"
+  }
+ ],
+ "aviso": "Números de escopos diferentes NÃO podem ser comparados entre si."
+}

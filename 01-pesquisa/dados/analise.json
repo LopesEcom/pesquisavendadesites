@@ -1,0 +1,1802 @@
+{
+ "grupos": {
+  "N": {
+   "ads": 221,
+   "paginas": 42,
+   "fmt": [
+    [
+     "Vídeo",
+     87
+    ],
+    [
+     "Dinâmico da Meta",
+     68
+    ],
+    [
+     "Imagem",
+     54
+    ],
+    [
+     "Carrossel",
+     11
+    ],
+    [
+     "MULTI_IMAGES",
+     1
+    ]
+   ],
+   "dest": [
+    [
+     "Site ou página",
+     129
+    ],
+    [
+     "WhatsApp",
+     78
+    ],
+    [
+     "Instagram",
+     8
+    ],
+    [
+     "Direct ou Messenger",
+     6
+    ]
+   ],
+   "dias_med": 9,
+   "mais60": 23,
+   "quadro": [
+    [
+     "D",
+     35
+    ],
+    [
+     "A",
+     26
+    ],
+    [
+     "P",
+     23
+    ],
+    [
+     "M",
+     20
+    ],
+    [
+     "O",
+     20
+    ],
+    [
+     "T",
+     7
+    ],
+    [
+     "V",
+     3
+    ]
+   ],
+   "q_total": 134
+  },
+  "G": {
+   "ads": 110,
+   "paginas": 73,
+   "fmt": [
+    [
+     "Vídeo",
+     51
+    ],
+    [
+     "Imagem",
+     33
+    ],
+    [
+     "Dinâmico da Meta",
+     23
+    ],
+    [
+     "Carrossel",
+     3
+    ]
+   ],
+   "dest": [
+    [
+     "WhatsApp",
+     64
+    ],
+    [
+     "Site ou página",
+     23
+    ],
+    [
+     "Instagram",
+     13
+    ],
+    [
+     "Direct ou Messenger",
+     9
+    ],
+    [
+     "Facebook ou sem destino",
+     1
+    ]
+   ],
+   "dias_med": 5.0,
+   "mais60": 15,
+   "quadro": [
+    [
+     "A",
+     34
+    ],
+    [
+     "P",
+     18
+    ],
+    [
+     "M",
+     13
+    ],
+    [
+     "O",
+     12
+    ],
+    [
+     "D",
+     6
+    ],
+    [
+     "T",
+     1
+    ]
+   ],
+   "q_total": 84
+  },
+  "S": {
+   "ads": 169,
+   "paginas": 12,
+   "fmt": [
+    [
+     "Dinâmico da Meta",
+     68
+    ],
+    [
+     "Vídeo",
+     59
+    ],
+    [
+     "Imagem",
+     30
+    ],
+    [
+     "Carrossel",
+     12
+    ]
+   ],
+   "dest": [
+    [
+     "Site ou página",
+     149
+    ],
+    [
+     "Instagram",
+     15
+    ],
+    [
+     "Direct ou Messenger",
+     3
+    ],
+    [
+     "WhatsApp",
+     2
+    ]
+   ],
+   "dias_med": 18,
+   "mais60": 47,
+   "quadro": [
+    [
+     "O",
+     28
+    ],
+    [
+     "P",
+     23
+    ],
+    [
+     "A",
+     15
+    ],
+    [
+     "D",
+     10
+    ],
+    [
+     "M",
+     3
+    ]
+   ],
+   "q_total": 79
+  },
+  "E": {
+   "ads": 33,
+   "paginas": 13,
+   "fmt": [
+    [
+     "Vídeo",
+     20
+    ],
+    [
+     "Imagem",
+     12
+    ],
+    [
+     "Dinâmico da Meta",
+     1
+    ]
+   ],
+   "dest": [
+    [
+     "Site ou página",
+     23
+    ],
+    [
+     "Instagram",
+     6
+    ],
+    [
+     "WhatsApp",
+     4
+    ]
+   ],
+   "dias_med": 12,
+   "mais60": 4,
+   "quadro": [
+    [
+     "P",
+     7
+    ],
+    [
+     "T",
+     5
+    ],
+    [
+     "M",
+     2
+    ],
+    [
+     "D",
+     1
+    ],
+    [
+     "A",
+     1
+    ]
+   ],
+   "q_total": 16
+  }
+ },
+ "paginas": [
+  {
+   "pid": "106645949186657",
+   "nome": "MSYS Imob",
+   "g": "S",
+   "nicho": "Imobiliárias",
+   "ads": 30,
+   "diasMax": 279,
+   "var": 55,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/100095339831658/",
+   "likes": 229
+  },
+  {
+   "pid": "110757448662948",
+   "nome": "Insites Digital",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 267,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/insitesdigital.com.br/",
+   "likes": 1096
+  },
+  {
+   "pid": "192091630660031",
+   "nome": "Douglas Business",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 250,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61555603792233/",
+   "likes": 1
+  },
+  {
+   "pid": "463413310482921",
+   "nome": "Agência Digital Talismã",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 18,
+   "diasMax": 230,
+   "var": 23,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/agenciadigitaltalisma/",
+   "likes": 1242
+  },
+  {
+   "pid": "529742993551805",
+   "nome": "Sofia Lima",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 168,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61570338337427/",
+   "likes": 9
+  },
+  {
+   "pid": "948621751669753",
+   "nome": "PetterJones",
+   "g": "N",
+   "nicho": "Saúde",
+   "ads": 5,
+   "diasMax": 166,
+   "var": 5,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61586587778020/",
+   "likes": 1
+  },
+  {
+   "pid": "101752272645720",
+   "nome": "TCO",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 17,
+   "diasMax": 155,
+   "var": 17,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/100084309550815/",
+   "likes": 17
+  },
+  {
+   "pid": "262660256923215",
+   "nome": "noleto_tech",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 144,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/vezora_agendamentos",
+   "likes": 0
+  },
+  {
+   "pid": "579689098569351",
+   "nome": "WebPsi - Gestor de consultório e criador de sites",
+   "g": "S",
+   "nicho": "Psicólogos",
+   "ads": 30,
+   "diasMax": 138,
+   "var": 37,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/webpsioficial/",
+   "likes": 153
+  },
+  {
+   "pid": "765749066631258",
+   "nome": "Designer Lorena",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 136,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61582872242247/",
+   "likes": 106
+  },
+  {
+   "pid": "1485037178470094",
+   "nome": "Agência JKR",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 123,
+   "var": 2,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/agenciajkr/",
+   "likes": 3324
+  },
+  {
+   "pid": "194384667272417",
+   "nome": "Byte a Byte - Agência Digital",
+   "g": "N",
+   "nicho": "Clínicas",
+   "ads": 5,
+   "diasMax": 122,
+   "var": 5,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/byteabyte/",
+   "likes": 1579
+  },
+  {
+   "pid": "684171231435545",
+   "nome": "Sites Modernos",
+   "g": "N",
+   "nicho": "Psicólogos",
+   "ads": 2,
+   "diasMax": 119,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61575519841527/",
+   "likes": 3
+  },
+  {
+   "pid": "270603109623962",
+   "nome": "CODE 49 Brasil",
+   "g": "S",
+   "nicho": "Imobiliárias",
+   "ads": 15,
+   "diasMax": 117,
+   "var": 22,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/code49/",
+   "likes": 15047
+  },
+  {
+   "pid": "111651424736191",
+   "nome": "Ilimitte Marketing Jurídico",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 4,
+   "diasMax": 116,
+   "var": 4,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/mdagenciadigitalgo/",
+   "likes": 476
+  },
+  {
+   "pid": "273298832523195",
+   "nome": "Roxedo",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 109,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/roxedopublicidade/",
+   "likes": 99
+  },
+  {
+   "pid": "796905773516549",
+   "nome": "Ganhardinheiro FN",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 97,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61583404666716/",
+   "likes": 1
+  },
+  {
+   "pid": "394462573991735",
+   "nome": "OPS Empresas",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 95,
+   "var": 30,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/opsempresas/",
+   "likes": 2024
+  },
+  {
+   "pid": "720682177789429",
+   "nome": "JJ company",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 2,
+   "diasMax": 74,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61577741416168/",
+   "likes": 2
+  },
+  {
+   "pid": "226591223877451",
+   "nome": "ImoTools",
+   "g": "N",
+   "nicho": "Imobiliárias",
+   "ads": 52,
+   "diasMax": 74,
+   "var": 64,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/aimotools/",
+   "likes": 176
+  },
+  {
+   "pid": "1294551583739746",
+   "nome": "Criaçaodesiteminas",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 70,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61593816120642/",
+   "likes": 1
+  },
+  {
+   "pid": "489322420941238",
+   "nome": "Don Comunicação Digital - Agência",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 65,
+   "var": 4,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61572837664514/",
+   "likes": 9
+  },
+  {
+   "pid": "101125889389154",
+   "nome": "Brain - Desenvolvimento de Sites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 63,
+   "var": 4,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/brainsistemas1/",
+   "likes": 2539
+  },
+  {
+   "pid": "611551665371205",
+   "nome": "Criativamarketingbrand",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 58,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/61574808322694/",
+   "likes": 41
+  },
+  {
+   "pid": "1378192032033709",
+   "nome": "Superadmin",
+   "g": "S",
+   "nicho": "Imobiliárias",
+   "ads": 4,
+   "diasMax": 54,
+   "var": 8,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/superadmin.ia.br/",
+   "likes": 7
+  },
+  {
+   "pid": "1144335292107385",
+   "nome": "André Igor  Criação de Sites Tráfego pago",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 1,
+   "diasMax": 52,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61592027626623/",
+   "likes": 0
+  },
+  {
+   "pid": "574362225755288",
+   "nome": "Namastê Agency",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 52,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61572475748944/",
+   "likes": 12
+  },
+  {
+   "pid": "1199158716622111",
+   "nome": "Prime Asessoria",
+   "g": "N",
+   "nicho": "Clínicas",
+   "ads": 4,
+   "diasMax": 51,
+   "var": 4,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61592277053920/",
+   "likes": 15
+  },
+  {
+   "pid": "103877865803756",
+   "nome": "Jusfy Tecnologia",
+   "g": "S",
+   "nicho": "Advogados",
+   "ads": 58,
+   "diasMax": 47,
+   "var": 91,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/jusfybr/",
+   "likes": 2442
+  },
+  {
+   "pid": "1152489471275827",
+   "nome": "PHLM Gestão de Marketing & Tecnologia",
+   "g": "N",
+   "nicho": "Nutricionistas",
+   "ads": 8,
+   "diasMax": 36,
+   "var": 8,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61590595200792/",
+   "likes": 8
+  },
+  {
+   "pid": "705157682685611",
+   "nome": "Cruzetta Solucoes",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 36,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61578070299883/",
+   "likes": 215
+  },
+  {
+   "pid": "407065236530742",
+   "nome": "AMA - Agência de Publicidade",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 34,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/agenciaama/",
+   "likes": 529
+  },
+  {
+   "pid": "201460156390031",
+   "nome": "Psicoflow",
+   "g": "S",
+   "nicho": "Psicólogos",
+   "ads": 3,
+   "diasMax": 32,
+   "var": 3,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/ampliandopsi/",
+   "likes": 7
+  },
+  {
+   "pid": "552445168128731",
+   "nome": "Conexão Total Comunicação e Marketing",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 30,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/conexaototalcomunicacaoemarketing/",
+   "likes": 843
+  },
+  {
+   "pid": "1352488707951554",
+   "nome": "FREEL",
+   "g": "S",
+   "nicho": "Profissional liberal",
+   "ads": 8,
+   "diasMax": 29,
+   "var": 8,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61595672462731/",
+   "likes": 5
+  },
+  {
+   "pid": "1330520043480562",
+   "nome": "Studio Fade&Co",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 26,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61594784915889/",
+   "likes": 1
+  },
+  {
+   "pid": "150115491715686",
+   "nome": "Realce Sites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 26,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/realcesites/",
+   "likes": 725
+  },
+  {
+   "pid": "125902670608394",
+   "nome": "Agência Marçal",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 23,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/agenciamarcal/",
+   "likes": 54
+  },
+  {
+   "pid": "106057995723527",
+   "nome": "Space Fast - Marketing",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 22,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/100089649878355/",
+   "likes": 8
+  },
+  {
+   "pid": "1025319177342118",
+   "nome": "I4 Company",
+   "g": "N",
+   "nicho": "Corretores",
+   "ads": 4,
+   "diasMax": 21,
+   "var": 4,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61566081189913/",
+   "likes": 77
+  },
+  {
+   "pid": "1451213324733704",
+   "nome": "Rodrigo Vincensi",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 21,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61595615853352/",
+   "likes": 2
+  },
+  {
+   "pid": "1430673766787307",
+   "nome": "Btech Marketing Produtos e Serviços Digitais",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 20,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61595278171537/",
+   "likes": 10
+  },
+  {
+   "pid": "106996834441797",
+   "nome": "Nexxus Digital Blumenau",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 18,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/nexxusdigitalblu/",
+   "likes": 1707
+  },
+  {
+   "pid": "1390930384111255",
+   "nome": "DF Solutions Software",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 18,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61595739281604/",
+   "likes": 0
+  },
+  {
+   "pid": "1403389489524173",
+   "nome": "Curvelo.art",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 18,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/61595460638197/",
+   "likes": 0
+  },
+  {
+   "pid": "196187450429424",
+   "nome": "Aprimora Web",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 11,
+   "diasMax": 17,
+   "var": 14,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/aprimoraweb/",
+   "likes": 2358
+  },
+  {
+   "pid": "2230146363926714",
+   "nome": "Imóvel Guide",
+   "g": "S",
+   "nicho": "Corretores",
+   "ads": 13,
+   "diasMax": 17,
+   "var": 13,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/imovelguideoficial/",
+   "likes": 243
+  },
+  {
+   "pid": "1459962877191701",
+   "nome": "Almeida Studio Mkt",
+   "g": "N",
+   "nicho": "Saúde",
+   "ads": 3,
+   "diasMax": 17,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61595850823974/",
+   "likes": 0
+  },
+  {
+   "pid": "100783231733847",
+   "nome": "Advogar Digital",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 16,
+   "diasMax": 16,
+   "var": 16,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/advogardigital/",
+   "likes": 1583
+  },
+  {
+   "pid": "643438378842987",
+   "nome": "Tony  Zimo Martech",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 16,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61574473635182/",
+   "likes": 1
+  },
+  {
+   "pid": "1453073387881267",
+   "nome": "AXOM",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 16,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61595231740545/",
+   "likes": 0
+  },
+  {
+   "pid": "1377725588766179",
+   "nome": "Otimize Sites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 16,
+   "var": 9,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61595381177895/",
+   "likes": 5
+  },
+  {
+   "pid": "569251633247016",
+   "nome": "DGN Publicidade e Marketing",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 15,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/dgnpublicidademarketing/",
+   "likes": 1066
+  },
+  {
+   "pid": "124413180644122",
+   "nome": "Ellos Design Criação de Sites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 13,
+   "var": 3,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/100092601075530/",
+   "likes": 167
+  },
+  {
+   "pid": "951701678034380",
+   "nome": "Brovia",
+   "g": "S",
+   "nicho": "Corretores",
+   "ads": 1,
+   "diasMax": 12,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61587230308654/",
+   "likes": 46
+  },
+  {
+   "pid": "185882148113251",
+   "nome": "C2TI",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 12,
+   "var": 2,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/C2TISites/",
+   "likes": 3053
+  },
+  {
+   "pid": "1478655248656454",
+   "nome": "Mago Digital",
+   "g": "N",
+   "nicho": "Barbearias",
+   "ads": 2,
+   "diasMax": 12,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596315272050/",
+   "likes": 2
+  },
+  {
+   "pid": "108751238905112",
+   "nome": "Laura Santiago",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 2,
+   "diasMax": 12,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/100092193054661/",
+   "likes": 1
+  },
+  {
+   "pid": "1304625726077511",
+   "nome": "Rivor",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 12,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61595183295864/",
+   "likes": 1
+  },
+  {
+   "pid": "607016252499080",
+   "nome": "Rentup Sistema Imobiliário",
+   "g": "S",
+   "nicho": "Aluguel de temporada",
+   "ads": 5,
+   "diasMax": 11,
+   "var": 5,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61575225253941/",
+   "likes": 14
+  },
+  {
+   "pid": "1066270563237020",
+   "nome": "Flash Sites - Arquitetura Digital",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 10,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61567500502815/",
+   "likes": 31
+  },
+  {
+   "pid": "1266920799847664",
+   "nome": "Oxo Soluções Digitais",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 1,
+   "diasMax": 10,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61595355742164/",
+   "likes": 1
+  },
+  {
+   "pid": "1326052227266691",
+   "nome": "LWCode Soluções para Internet",
+   "g": "N",
+   "nicho": "Imobiliárias",
+   "ads": 1,
+   "diasMax": 9,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61595188755194/",
+   "likes": 0
+  },
+  {
+   "pid": "1316504164890247",
+   "nome": "EdxWeb ",
+   "g": "N",
+   "nicho": "Vários nichos citados",
+   "ads": 2,
+   "diasMax": 9,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/edxweb/",
+   "likes": 1
+  },
+  {
+   "pid": "1101900083011933",
+   "nome": "Google Primeira Página",
+   "g": "N",
+   "nicho": "Dentistas",
+   "ads": 2,
+   "diasMax": 9,
+   "var": 2,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61590332823027/",
+   "likes": 8
+  },
+  {
+   "pid": "1202204276310470",
+   "nome": "Cliente em 3 Passos",
+   "g": "N",
+   "nicho": "Quem vende pelo WhatsApp",
+   "ads": 1,
+   "diasMax": 8,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/clienteem3passos/",
+   "likes": 0
+  },
+  {
+   "pid": "832107853323070",
+   "nome": "Elismael Santos",
+   "g": "N",
+   "nicho": "Psicólogos",
+   "ads": 10,
+   "diasMax": 8,
+   "var": 10,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61582690301540/",
+   "likes": 37
+  },
+  {
+   "pid": "869327566273515",
+   "nome": "wpcriandositesdigital",
+   "g": "N",
+   "nicho": "Saúde",
+   "ads": 1,
+   "diasMax": 8,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/wpcriandositesdigital",
+   "likes": 0
+  },
+  {
+   "pid": "415272595275743",
+   "nome": "W2 Websites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 8,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/w2websites/",
+   "likes": 558
+  },
+  {
+   "pid": "108435748803951",
+   "nome": "IF Websites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 8,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/agenciaifwebsites/",
+   "likes": 24
+  },
+  {
+   "pid": "209235532283525",
+   "nome": "Solarb Energia Solar Fotovoltaica",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 7,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61557745880797/",
+   "likes": 28
+  },
+  {
+   "pid": "1442802482247496",
+   "nome": "Nexo Digital",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 7,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596364503959/",
+   "likes": 0
+  },
+  {
+   "pid": "1449169641609938",
+   "nome": "VitrineSites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 7,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61596786050877/",
+   "likes": 11
+  },
+  {
+   "pid": "1421147417751649",
+   "nome": "sergiodesenvolvedor",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 6,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.instagram.com/_u/sergiodesenvolvedor",
+   "likes": 0
+  },
+  {
+   "pid": "1284959341359391",
+   "nome": "Bernardo Wainer",
+   "g": "N",
+   "nicho": "Arquitetos",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61592858046048/",
+   "likes": 1
+  },
+  {
+   "pid": "1138469946012130",
+   "nome": "Cria Buzz Midia",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61590159521210/",
+   "likes": 1
+  },
+  {
+   "pid": "107940812117579",
+   "nome": "Furtado Leite Desenvolvimentos",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/100087348667037/",
+   "likes": 14
+  },
+  {
+   "pid": "105667667830919",
+   "nome": "Agência Cliques",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 4,
+   "diasMax": 5,
+   "var": 4,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/agenciacliques/",
+   "likes": 261
+  },
+  {
+   "pid": "333150533373054",
+   "nome": "Expresso 3 Marketing Digital",
+   "g": "N",
+   "nicho": "Pet e veterinária",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/Expresso3marketing/",
+   "likes": 5
+  },
+  {
+   "pid": "1347342341798447",
+   "nome": "icenex.adm",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.instagram.com/_u/icenex.adm",
+   "likes": 0
+  },
+  {
+   "pid": "1433133726550042",
+   "nome": "Origem Digital ",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 5,
+   "var": 5,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/61596258069545/",
+   "likes": 50
+  },
+  {
+   "pid": "1330001710206683",
+   "nome": "Imopage",
+   "g": "S",
+   "nicho": "Corretores",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61596136929115/",
+   "likes": 0
+  },
+  {
+   "pid": "824124617448749",
+   "nome": "MaxiView",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/maxiviewoficial/",
+   "likes": 8
+  },
+  {
+   "pid": "1481662365025472",
+   "nome": "Criarks",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 5,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596337503439/",
+   "likes": 0
+  },
+  {
+   "pid": "339408119261227",
+   "nome": "Marketing Digital- CP Comunica",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 5,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61561505940860/",
+   "likes": 27
+  },
+  {
+   "pid": "156007054253380",
+   "nome": "Studio Novo",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61551746027678/",
+   "likes": 39
+  },
+  {
+   "pid": "109844507409636",
+   "nome": "Stanley Batista",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 4,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/stanleybatiista/",
+   "likes": 182
+  },
+  {
+   "pid": "819254234915949",
+   "nome": "CEO & Founder: Igor Santos",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/IGORSANTOS.bra/",
+   "likes": 94
+  },
+  {
+   "pid": "1398835116655021",
+   "nome": "Laboratorio Apex",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596295778640/",
+   "likes": 1
+  },
+  {
+   "pid": "1120624081139957",
+   "nome": "LPVende",
+   "g": "N",
+   "nicho": "Psicólogos",
+   "ads": 4,
+   "diasMax": 4,
+   "var": 4,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61589808908483/",
+   "likes": 0
+  },
+  {
+   "pid": "1475126799024818",
+   "nome": "Fantilabs",
+   "g": "N",
+   "nicho": "Dentistas",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61596337965763/",
+   "likes": 0
+  },
+  {
+   "pid": "1464125520112080",
+   "nome": "lumadigital.web",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 2,
+   "dest": "Site ou página",
+   "ig": "https://www.instagram.com/_u/lumadigital.web",
+   "likes": 0
+  },
+  {
+   "pid": "176403915554543",
+   "nome": "Elevatelp",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 6,
+   "diasMax": 4,
+   "var": 10,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61553372807826/",
+   "likes": 49
+  },
+  {
+   "pid": "101556411663084",
+   "nome": "Koneksi",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/tuvilela/",
+   "likes": 57
+  },
+  {
+   "pid": "309091142288540",
+   "nome": "Caio Santana - Google e Sites para Empresas",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 3,
+   "diasMax": 4,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/posicionenogoogle/",
+   "likes": 56
+  },
+  {
+   "pid": "324617574078790",
+   "nome": "EnzoGomes",
+   "g": "N",
+   "nicho": "Cidade (São Roque)",
+   "ads": 1,
+   "diasMax": 4,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61563045406432/",
+   "likes": 6
+  },
+  {
+   "pid": "1311746145366448",
+   "nome": "clinarteagencia",
+   "g": "N",
+   "nicho": "Saúde",
+   "ads": 2,
+   "diasMax": 3,
+   "var": 2,
+   "dest": "Site ou página",
+   "ig": "https://www.instagram.com/_u/clinarteagencia",
+   "likes": 0
+  },
+  {
+   "pid": "968771972988736",
+   "nome": "Notus Studio",
+   "g": "N",
+   "nicho": "Psicólogos",
+   "ads": 9,
+   "diasMax": 3,
+   "var": 9,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61587023357712/",
+   "likes": 2
+  },
+  {
+   "pid": "1395337560336217",
+   "nome": "unemployedteamoficial",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/unemployedteamoficial",
+   "likes": 0
+  },
+  {
+   "pid": "840796089110228",
+   "nome": "VcInova Labs",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61580307598793/",
+   "likes": 1
+  },
+  {
+   "pid": "986045484583427",
+   "nome": "Rudhá Dev",
+   "g": "N",
+   "nicho": "Psicólogos",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.facebook.com/61585501702166/",
+   "likes": 0
+  },
+  {
+   "pid": "1613916965558916",
+   "nome": "Easy Design Comunicação",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/easydesigncomunicacao/",
+   "likes": 211
+  },
+  {
+   "pid": "1064311510104804",
+   "nome": "AngelaLeite.com",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 3,
+   "var": 2,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61589308190753/",
+   "likes": 0
+  },
+  {
+   "pid": "1239916885869918",
+   "nome": "LS Soluções Tech ",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61592093002382/",
+   "likes": 3
+  },
+  {
+   "pid": "614105928445604",
+   "nome": "Agência Dalibor",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61573584914163/",
+   "likes": 6
+  },
+  {
+   "pid": "115475980324266",
+   "nome": "RF Digital",
+   "g": "N",
+   "nicho": "Esquadrias de alumínio",
+   "ads": 3,
+   "diasMax": 3,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/rfdigital2/",
+   "likes": 218
+  },
+  {
+   "pid": "1372355719285965",
+   "nome": "Ritmo",
+   "g": "S",
+   "nicho": "Personal trainers",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61593467774526/",
+   "likes": 8
+  },
+  {
+   "pid": "1324394810766121",
+   "nome": "Flux Mídia e Publicidade",
+   "g": "N",
+   "nicho": "Clínicas",
+   "ads": 3,
+   "diasMax": 3,
+   "var": 3,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61595588425591/",
+   "likes": 1
+  },
+  {
+   "pid": "1504989339353389",
+   "nome": "Escolha seu Site",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 3,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/escolhaseusite/",
+   "likes": 21
+  },
+  {
+   "pid": "1057275470811957",
+   "nome": "lucasvinicius_1804",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/lucasvinicius_1804",
+   "likes": 0
+  },
+  {
+   "pid": "423348537519749",
+   "nome": "Elévant • Sites • Agência de IA • Negócios Digitais",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/elevantnd/",
+   "likes": 4
+  },
+  {
+   "pid": "1268218323037937",
+   "nome": "cachanate",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Site ou página",
+   "ig": "https://www.instagram.com/_u/nathan.cachn",
+   "likes": 0
+  },
+  {
+   "pid": "1435710152962301",
+   "nome": "luiseduardo.dev",
+   "g": "N",
+   "nicho": "Saúde",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/luiseduardo.dev",
+   "likes": 0
+  },
+  {
+   "pid": "1457307414136201",
+   "nome": "CASS Digital",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 2,
+   "var": 3,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61596415206913/",
+   "likes": 2
+  },
+  {
+   "pid": "1377123535493686",
+   "nome": "ALIEN Augusto ",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 5,
+   "diasMax": 2,
+   "var": 6,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596581854585/",
+   "likes": 1
+  },
+  {
+   "pid": "1357119964147228",
+   "nome": "felipealves.pages",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/felipealves.pages",
+   "likes": 0
+  },
+  {
+   "pid": "1428003967066263",
+   "nome": "originstech",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Instagram",
+   "ig": "https://www.instagram.com/_u/originstech",
+   "likes": 0
+  },
+  {
+   "pid": "1379308031941970",
+   "nome": "Elementar Vendas",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 2,
+   "var": 1,
+   "dest": "Direct ou Messenger",
+   "ig": "https://www.facebook.com/61596488441054/",
+   "likes": 0
+  },
+  {
+   "pid": "1346520728541867",
+   "nome": "Betel Digital ",
+   "g": "N",
+   "nicho": "Região (MG)",
+   "ads": 1,
+   "diasMax": 1,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61594188341961/",
+   "likes": 1
+  },
+  {
+   "pid": "1240105672520319",
+   "nome": "GM Marketing Digital",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 2,
+   "diasMax": 1,
+   "var": 2,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61592028056420/",
+   "likes": 27
+  },
+  {
+   "pid": "1376835202190775",
+   "nome": "Publys Tech",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 4,
+   "diasMax": 1,
+   "var": 4,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596283092221/",
+   "likes": 0
+  },
+  {
+   "pid": "1414868571714032",
+   "nome": "Express Sites",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 1,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596537538572/",
+   "likes": 1
+  },
+  {
+   "pid": "1352843584590278",
+   "nome": "Kromma ",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 3,
+   "diasMax": 1,
+   "var": 3,
+   "dest": "Site ou página",
+   "ig": "https://www.facebook.com/61596374476709/",
+   "likes": 0
+  },
+  {
+   "pid": "793290953872147",
+   "nome": "Sabrina Oliveiraa",
+   "g": "N",
+   "nicho": "Eventos e cerimonial",
+   "ads": 3,
+   "diasMax": 1,
+   "var": 3,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61581196785866/",
+   "likes": 5
+  },
+  {
+   "pid": "359866541524208",
+   "nome": "Studio Dljuliana Fortuna",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 1,
+   "diasMax": 1,
+   "var": 1,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/studiodljulianafortuna/",
+   "likes": 1789
+  },
+  {
+   "pid": "1285991681274012",
+   "nome": "OH, Ya Social Lab",
+   "g": "G",
+   "nicho": "Genérico",
+   "ads": 3,
+   "diasMax": 1,
+   "var": 9,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61594885781588/",
+   "likes": 0
+  },
+  {
+   "pid": "1433577579841302",
+   "nome": "Vytron Solv",
+   "g": "N",
+   "nicho": "Advogados",
+   "ads": 5,
+   "diasMax": 1,
+   "var": 5,
+   "dest": "WhatsApp",
+   "ig": "https://www.facebook.com/61596516370352/",
+   "likes": 0
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+[
+ {
+  "marca": "ImoTools",
+  "dominio": "sistemadelocacaodeimoveis.com.br",
+  "anuncios": 52,
+  "diasMaisVelho": 74,
+  "diasMediana": 30,
+  "variacoesMax": 2,
+  "variacoesSoma": 64,
+  "sustentado": true,
+  "escala": 548.4
+ },
+ {
+  "marca": "Byte a Byte - Agência Digital",
+  "dominio": "instagram.com",
+  "anuncios": 5,
+  "diasMaisVelho": 122,
+  "diasMediana": 61,
+  "variacoesMax": 1,
+  "variacoesSoma": 5,
+  "sustentado": true,
+  "escala": 118.2
+ },
+ {
+  "marca": "PHLM Gestão de Marketing & Tecnologia",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 8,
+  "diasMaisVelho": 36,
+  "diasMediana": 36,
+  "variacoesMax": 1,
+  "variacoesSoma": 8,
+  "sustentado": false,
+  "escala": 93.6
+ },
+ {
+  "marca": "Prime Asessoria",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 4,
+  "diasMaisVelho": 51,
+  "diasMediana": 25,
+  "variacoesMax": 1,
+  "variacoesSoma": 4,
+  "sustentado": false,
+  "escala": 66.6
+ },
+ {
+  "marca": "I4 Company",
+  "dominio": "site.i4company.com.br",
+  "anuncios": 4,
+  "diasMaisVelho": 21,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 4,
+  "sustentado": false,
+  "escala": 48.6
+ },
+ {
+  "marca": "Almeida Studio Mkt",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 3,
+  "diasMaisVelho": 17,
+  "diasMediana": 16,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 37.2
+ },
+ {
+  "marca": "Flux Mídia e Publicidade",
+  "dominio": "fb.me",
+  "anuncios": 3,
+  "diasMaisVelho": 3,
+  "diasMediana": 3,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 28.8
+ },
+ {
+  "marca": "RF Digital",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 3,
+  "diasMaisVelho": 3,
+  "diasMediana": 3,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 28.8
+ },
+ {
+  "marca": "Sabrina Oliveiraa",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 3,
+  "diasMaisVelho": 1,
+  "diasMediana": 1,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 27.6
+ },
+ {
+  "marca": "Mago Digital",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 2,
+  "diasMaisVelho": 12,
+  "diasMediana": 12,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": false,
+  "escala": 25.2
+ },
+ {
+  "marca": "Google Primeira Página",
+  "dominio": "site.googleprimeirapaginas.com.br",
+  "anuncios": 2,
+  "diasMaisVelho": 9,
+  "diasMediana": 7,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": false,
+  "escala": 23.4
+ },
+ {
+  "marca": "EdxWeb ",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 2,
+  "diasMaisVelho": 9,
+  "diasMediana": 9,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": false,
+  "escala": 23.4
+ },
+ {
+  "marca": "clinarteagencia",
+  "dominio": "clinarte.com.br",
+  "anuncios": 2,
+  "diasMaisVelho": 3,
+  "diasMediana": 3,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": false,
+  "escala": 19.8
+ },
+ {
+  "marca": "LWCode Soluções para Internet",
+  "dominio": "lwcode.com.br",
+  "anuncios": 1,
+  "diasMaisVelho": 9,
+  "diasMediana": 9,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 14.399999999999999
+ },
+ {
+  "marca": "wpcriandositesdigital",
+  "dominio": "instagram.com",
+  "anuncios": 1,
+  "diasMaisVelho": 8,
+  "diasMediana": 8,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 13.8
+ },
+ {
+  "marca": "Cliente em 3 Passos",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 1,
+  "diasMaisVelho": 8,
+  "diasMediana": 8,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 13.8
+ },
+ {
+  "marca": "Expresso 3 Marketing Digital",
+  "dominio": "expresso3.com.br",
+  "anuncios": 1,
+  "diasMaisVelho": 5,
+  "diasMediana": 5,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 12
+ },
+ {
+  "marca": "Bernardo Wainer",
+  "dominio": "bernardowainer.com.br",
+  "anuncios": 1,
+  "diasMaisVelho": 5,
+  "diasMediana": 5,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 12
+ },
+ {
+  "marca": "Fantilabs",
+  "dominio": null,
+  "anuncios": 1,
+  "diasMaisVelho": 4,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 11.4
+ },
+ {
+  "marca": "luiseduardo.dev",
+  "dominio": "instagram.com",
+  "anuncios": 1,
+  "diasMaisVelho": 2,
+  "diasMediana": 2,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 10.2
+ }
+]

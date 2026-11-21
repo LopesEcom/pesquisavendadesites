@@ -1,0 +1,119 @@
+Mineração — 20 tarefa(s) | pais=BR | status=active | midia=all | max=60/tarefa
+Fonte: Biblioteca pública (o MCP não entrega copy, criativo nem landing page)
+
+== pagina: 100783231733847
+     16 anúncios
+
+== pagina: 111651424736191
+      4 anúncios
+
+== pagina: 309091142288540
+      3 anúncios
+
+== pagina: 196187450429424
+     11 anúncios
+
+== pagina: 108751238905112
+      2 anúncios
+
+== pagina: 1266920799847664
+      1 anúncios
+
+== pagina: 720682177789429
+      2 anúncios
+
+== pagina: 1144335292107385
+      1 anúncios
+
+== pagina: 423348537519749
+      1 anúncios
+
+== pagina: 1433577579841302
+      5 anúncios
+
+== pagina: 1352843584590278
+      3 anúncios
+
+== pagina: 1376835202190775
+      4 anúncios
+
+== pagina: 101752272645720
+     17 anúncios
+
+== pagina: 463413310482921
+     18 anúncios
+
+== pagina: 948621751669753
+      5 anúncios
+
+== pagina: 1120624081139957
+      4 anúncios
+
+== pagina: 968771972988736
+      9 anúncios
+
+== pagina: 832107853323070
+     10 anúncios
+
+== pagina: 684171231435545
+      2 anúncios
+
+== pagina: 986045484583427
+      1 anúncios
+
+=== RESULTADO ===
+anúncios únicos: 119   |   marcas: 20
+arquivo: C:\Users\Familia\Desktop\Pesquisa de Mercado\Raio-X Venda de Sites BR\01-pesquisa\dados\paginas\mineracao-2026-11-21-02-10-05.json
+
+=== ESCALA (tempo no ar · variações · nº de anúncios) ===
+ ord  dias  var  ads  sust  marca / domínio
+   1   230   23   18   SIM  Agência Digital Talismã  → instagram.com
+   2   155   17   17   SIM  TCO  → api.whatsapp.com
+   3    16   16   16    --   Advogar Digital  → lp.advogardigital.com
+   4   166    5    5   SIM  PetterJones  → fonsecawebstudio2.lovable.app
+   5    17   13   11    --   Aprimora Web  → links.aprimoraweb.com.br
+   6   116    4    4   SIM  Ilimitte Marketing Jurídico  → ilimitte.com
+   7     8   10   10    --   Elismael Santos  → api.whatsapp.com
+   8   119    2    2   SIM  Sites Modernos  → api.whatsapp.com
+   9     3    9    9    --   Notus Studio  → notusstudio.com
+  10    74    2    2   SIM  JJ company  → api.whatsapp.com
+  11     1    5    5    --   Vytron Solv  → api.whatsapp.com
+  12    52    1    1    --   André Igor  Criação de Sites Tráfego pago  → api.whatsapp.com
+  13     4    4    4    --   LPVende  → lpvende.com.br
+  14     1    4    4    --   Publys Tech  → api.whatsapp.com
+  15     4    3    3    --   Caio Santana - Google e Sites para Empresas  → api.whatsapp.com
+sust = passou de 60 dias ininterruptos no ar (o anúncio já se pagou)
+
+=== COBERTURA DOS CAMPOS ===
+ 119/119  adArchiveId
+ 119/119  adLibraryUrl
+ 119/119  pageId
+ 119/119  pageName
+ 119/119  pageUrl
+ 118/119  pageProfilePictureUrl
+ 119/119  pageCategories
+ 119/119  pageLikeCount
+ 119/119  isActive
+ 119/119  startDate
+ 119/119  endDate
+ 119/119  platforms
+ 115/119  bodyText
+  93/119  title
+ 119/119  ctaText
+ 119/119  ctaType
+ 118/119  linkUrl
+ 118/119  linkDomain
+ 114/119  linkCaption
+  45/119  linkDescription
+ 119/119  displayFormat
+  59/119  imageUrls
+  61/119  videoUrls
+  61/119  videoPreviewUrls
+ 119/119  categories
+ 119/119  containsAiMedia
+  28/119  impressions
+   0/119  spend
+   0/119  currency
+ 119/119  gatedType
+  89/119  collationCount
+  16/119  cardsCount

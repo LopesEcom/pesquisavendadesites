@@ -1,0 +1,71 @@
+Mineração — 4 tarefa(s) | pais=BR | status=active | midia=all | max=120/tarefa
+Fonte: Biblioteca pública (o MCP não entrega copy, criativo nem landing page)
+
+== busca: landing page profissional
+     16 anúncios
+
+== busca: sites profissionais
+     28 anúncios
+
+== busca: site para personal trainer
+     18 anúncios
+
+== busca: site para pet shop
+     28 anúncios
+
+=== RESULTADO ===
+anúncios únicos: 90   |   marcas: 60
+arquivo: C:\Users\Familia\Desktop\Pesquisa de Mercado\Raio-X Venda de Sites BR\01-pesquisa\dados\leva3\mineracao-2026-11-21-02-25-05.json
+
+=== ESCALA (tempo no ar · variações · nº de anúncios) ===
+ ord  dias  var  ads  sust  marca / domínio
+   1  1007    7    6   SIM  Pet Shop Casa Do Produtor  → casadoprodutor.com.br
+   2   255   16    7   SIM  Genspark AI  → play.google.com
+   3   285    2    1   SIM  Veter Ozon  → lp.veterozon.com.br
+   4   267    1    1   SIM  Insites Digital  → facebook.com
+   5   215    4    4   SIM  Wiki4FIT  → wiki4fit.com
+   6   174    2    1   SIM  Pet Bontrato  → instagram.com
+   7   130   10    1   SIM  Produtive - Carreira e Conexões com o Mercado  → conteudo.produtive.com.br
+   8   172    1    1   SIM  Pai do Low Ticket  → lp.fabricadelowticket.app
+   9   153    1    1   SIM  Shop Cão  → shopcao.com.br
+  10   152    1    1   SIM  HiperZoo  → hiperzoo.com.br
+  11   116    3    3   SIM  Ilimitte Marketing Jurídico  → ilimitte.com
+  12   145    1    1   SIM  Dicas Afneto  → afneto.com
+  13   136    1    1   SIM  Designer Lorena  → api.whatsapp.com
+  14   134    1    1   SIM  Avora.io  → academy.avoraai.io
+  15    38   10    5    --   Joel Jota  → go.adapta.org
+sust = passou de 60 dias ininterruptos no ar (o anúncio já se pagou)
+
+=== COBERTURA DOS CAMPOS ===
+  90/90  adArchiveId
+  90/90  adLibraryUrl
+  90/90  pageId
+  90/90  pageName
+  90/90  pageUrl
+  90/90  pageProfilePictureUrl
+  90/90  pageCategories
+  90/90  pageLikeCount
+  90/90  isActive
+  90/90  startDate
+  90/90  endDate
+  90/90  platforms
+  83/90  bodyText
+  53/90  title
+  89/90  ctaText
+  89/90  ctaType
+  90/90  linkUrl
+  90/90  linkDomain
+  89/90  linkCaption
+  32/90  linkDescription
+  90/90  displayFormat
+  35/90  imageUrls
+  56/90  videoUrls
+  56/90  videoPreviewUrls
+  90/90  categories
+  90/90  containsAiMedia
+   0/90  impressions
+   0/90  spend
+   0/90  currency
+  90/90  gatedType
+  73/90  collationCount
+  16/90  cardsCount

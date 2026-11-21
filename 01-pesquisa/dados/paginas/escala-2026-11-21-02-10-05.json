@@ -1,0 +1,222 @@
+[
+ {
+  "marca": "Agência Digital Talismã",
+  "dominio": "instagram.com",
+  "anuncios": 18,
+  "diasMaisVelho": 230,
+  "diasMediana": 18,
+  "variacoesMax": 3,
+  "variacoesSoma": 23,
+  "sustentado": true,
+  "escala": 315
+ },
+ {
+  "marca": "TCO",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 17,
+  "diasMaisVelho": 155,
+  "diasMediana": 40,
+  "variacoesMax": 1,
+  "variacoesSoma": 17,
+  "sustentado": true,
+  "escala": 246
+ },
+ {
+  "marca": "Advogar Digital",
+  "dominio": "lp.advogardigital.com",
+  "anuncios": 16,
+  "diasMaisVelho": 16,
+  "diasMediana": 15,
+  "variacoesMax": 1,
+  "variacoesSoma": 16,
+  "sustentado": false,
+  "escala": 153.6
+ },
+ {
+  "marca": "PetterJones",
+  "dominio": "fonsecawebstudio2.lovable.app",
+  "anuncios": 5,
+  "diasMaisVelho": 166,
+  "diasMediana": 166,
+  "variacoesMax": 1,
+  "variacoesSoma": 5,
+  "sustentado": true,
+  "escala": 144.6
+ },
+ {
+  "marca": "Aprimora Web",
+  "dominio": "links.aprimoraweb.com.br",
+  "anuncios": 11,
+  "diasMaisVelho": 17,
+  "diasMediana": 8,
+  "variacoesMax": 2,
+  "variacoesSoma": 13,
+  "sustentado": false,
+  "escala": 115.2
+ },
+ {
+  "marca": "Ilimitte Marketing Jurídico",
+  "dominio": "ilimitte.com",
+  "anuncios": 4,
+  "diasMaisVelho": 116,
+  "diasMediana": 75,
+  "variacoesMax": 1,
+  "variacoesSoma": 4,
+  "sustentado": true,
+  "escala": 105.6
+ },
+ {
+  "marca": "Elismael Santos",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 10,
+  "diasMaisVelho": 8,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 10,
+  "sustentado": false,
+  "escala": 94.8
+ },
+ {
+  "marca": "Sites Modernos",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 2,
+  "diasMaisVelho": 119,
+  "diasMediana": 119,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": true,
+  "escala": 89.39999999999999
+ },
+ {
+  "marca": "Notus Studio",
+  "dominio": "notusstudio.com",
+  "anuncios": 9,
+  "diasMaisVelho": 3,
+  "diasMediana": 3,
+  "variacoesMax": 1,
+  "variacoesSoma": 9,
+  "sustentado": false,
+  "escala": 82.8
+ },
+ {
+  "marca": "JJ company",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 2,
+  "diasMaisVelho": 74,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": true,
+  "escala": 62.4
+ },
+ {
+  "marca": "Vytron Solv",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 5,
+  "diasMaisVelho": 1,
+  "diasMediana": 1,
+  "variacoesMax": 1,
+  "variacoesSoma": 5,
+  "sustentado": false,
+  "escala": 45.6
+ },
+ {
+  "marca": "André Igor  Criação de Sites Tráfego pago",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 1,
+  "diasMaisVelho": 52,
+  "diasMediana": 52,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 40.2
+ },
+ {
+  "marca": "LPVende",
+  "dominio": "lpvende.com.br",
+  "anuncios": 4,
+  "diasMaisVelho": 4,
+  "diasMediana": 4,
+  "variacoesMax": 1,
+  "variacoesSoma": 4,
+  "sustentado": false,
+  "escala": 38.4
+ },
+ {
+  "marca": "Publys Tech",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 4,
+  "diasMaisVelho": 1,
+  "diasMediana": 1,
+  "variacoesMax": 1,
+  "variacoesSoma": 4,
+  "sustentado": false,
+  "escala": 36.6
+ },
+ {
+  "marca": "Caio Santana - Google e Sites para Empresas",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 3,
+  "diasMaisVelho": 4,
+  "diasMediana": 2,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 29.4
+ },
+ {
+  "marca": "Kromma ",
+  "dominio": "kromma.com.br",
+  "anuncios": 3,
+  "diasMaisVelho": 1,
+  "diasMediana": 1,
+  "variacoesMax": 1,
+  "variacoesSoma": 3,
+  "sustentado": false,
+  "escala": 27.6
+ },
+ {
+  "marca": "Laura Santiago",
+  "dominio": "api.whatsapp.com",
+  "anuncios": 2,
+  "diasMaisVelho": 12,
+  "diasMediana": 12,
+  "variacoesMax": 1,
+  "variacoesSoma": 2,
+  "sustentado": false,
+  "escala": 25.2
+ },
+ {
+  "marca": "Oxo Soluções Digitais",
+  "dominio": "fb.me",
+  "anuncios": 1,
+  "diasMaisVelho": 10,
+  "diasMediana": 10,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 15
+ },
+ {
+  "marca": "Rudhá Dev",
+  "dominio": "instagram.com",
+  "anuncios": 1,
+  "diasMaisVelho": 3,
+  "diasMediana": 3,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 10.8
+ },
+ {
+  "marca": "Elévant • Sites • Agência de IA • Negócios Digitais",
+  "dominio": null,
+  "anuncios": 1,
+  "diasMaisVelho": 2,
+  "diasMediana": 2,
+  "variacoesMax": 1,
+  "variacoesSoma": 1,
+  "sustentado": false,
+  "escala": 10.2
+ }
+]

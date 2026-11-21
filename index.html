@@ -1,0 +1,741 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Venda de sites nichada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--tinta:#0A0A0A;--cinza:#6B6B6B;--borda:#E4E4E4;--fundo:#FFFFFF;--suave:#FAFAFA;--verde:#008060;--filete:#95BF47;--preto:#000;--ativo:#1C1C1C}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:400 15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--verde)}
+.lado{position:fixed;inset:0 auto 0 0;width:236px;background:var(--preto);color:#fff;padding:22px 0;overflow:auto}
+.lado .marca{padding:0 20px 18px;font-weight:800;letter-spacing:-.02em;font-size:16px;line-height:1.25}
+.lado .marca small{display:block;color:#A3A3A3;font-weight:500;font-size:12px;letter-spacing:0;margin-top:4px}
+.lado nav a{display:block;padding:10px 20px 10px 17px;color:#D4D4D4;text-decoration:none;border-left:3px solid transparent;font-weight:500;font-size:14px}
+.lado nav a:hover{background:var(--ativo);color:#fff}
+.lado nav a.ativo{background:var(--ativo);color:#fff;border-left-color:var(--filete)}
+main{margin-left:236px;padding:36px 40px 80px;max-width:1240px}
+section{padding-top:18px;margin-bottom:44px}
+h1{font-size:32px;line-height:1.15;font-weight:800;letter-spacing:-.03em;margin:0 0 10px}
+h2{font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.03em;margin:0 0 6px}
+h3{font-size:16px;font-weight:700;letter-spacing:-.01em;margin:0 0 4px}
+.sub{color:var(--cinza);margin:0 0 16px}
+.lead{font-size:17px;max-width:760px;margin:0 0 22px}
+.aviso{border:1px solid var(--borda);border-left:3px solid var(--filete);border-radius:12px;background:var(--suave);padding:14px 16px;margin:0 0 22px;font-size:14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.tile{border:1px solid var(--borda);border-radius:12px;padding:14px 16px;background:#fff}
+.tile b{display:block;font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.tile span{color:var(--cinza);font-size:13px}
+.card{border:1px solid var(--borda);border-radius:12px;padding:18px;background:#fff;margin-bottom:16px;min-width:0}
+.duas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.duas .card{margin:0}
+.barras{display:grid;gap:9px;margin-top:12px}
+.barra{display:grid;grid-template-columns:minmax(0,40%) 1fr 76px;gap:10px;align-items:center;font-size:14px}
+.b-rot{min-width:0}.b-trilho{background:#F2F2F2;border-radius:4px;height:10px;overflow:hidden}
+.b-trilho i{display:block;height:100%;background:var(--verde);border-radius:4px}
+.barra:hover .b-trilho i{background:#006E52}
+.b-val{text-align:right;color:var(--cinza);font-size:13px;white-space:nowrap}.b-val b{color:var(--tinta);font-weight:700}
+ol.molde,ol.passos{margin:0;padding:0;list-style:none;counter-reset:n}
+ol.molde li,ol.passos li{counter-increment:n;position:relative;padding:0 0 14px 40px}
+ol.molde li:before,ol.passos li:before{content:counter(n);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--preto);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+ol.passos li:last-child,ol.molde li:last-child{padding-bottom:0}
+.gancho{border:1px solid var(--borda);border-radius:12px;padding:18px;margin-bottom:14px}
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+figure{margin:0}.video-box{aspect-ratio:9/16;background:#111;border-radius:10px;overflow:hidden}
+.video-box video,.video-box img{width:100%;height:100%;object-fit:cover;display:block}
+figcaption{font-size:13px;margin-top:7px;line-height:1.35}figcaption b{display:block;font-weight:600}figcaption span{display:block;color:var(--cinza)}
+.filtros{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px;align-items:center}
+.filtros button{font:500 13px Inter,system-ui,sans-serif;background:#fff;border:1px solid var(--borda);border-radius:999px;padding:7px 12px;cursor:pointer;color:var(--tinta)}
+.filtros button:hover{background:var(--suave)}.filtros button.on{background:var(--preto);color:#fff;border-color:var(--preto)}
+input[type=search]{font:400 14px Inter,system-ui,sans-serif;border:1px solid var(--borda);border-radius:8px;padding:9px 12px;min-width:240px;max-width:100%}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.item{all:unset;cursor:pointer;display:block;min-width:0}.item:focus-visible{outline:2px solid var(--verde);outline-offset:2px;border-radius:10px}
+.item img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;display:block;background:#EEE}
+.item b{display:block;font-weight:600;font-size:13px;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item span{display:block;font-size:12px;color:var(--cinza)}
+dialog{border:1px solid var(--borda);border-radius:12px;padding:0;width:min(860px,calc(100vw - 32px));max-height:calc(100vh - 32px)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dl{padding:20px}.dl-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.fechar{font:600 14px Inter,system-ui,sans-serif;background:#fff;border:1px solid var(--borda);border-radius:8px;padding:6px 10px;cursor:pointer}
+.dl-qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0}.dl-qs img,.dl-qs video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;display:block;background:#111}
+.dl h4{font-size:13px;color:var(--cinza);font-weight:600;margin:14px 0 4px}.dl p{margin:0;white-space:pre-wrap;font-size:14px}
+.botao{display:inline-block;background:var(--verde);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:9px 14px;border-radius:8px;margin-top:14px}
+.tab{overflow-x:auto;border:1px solid var(--borda);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}th{background:var(--suave);font-weight:600;text-align:left;padding:10px 12px;color:var(--cinza);border-bottom:1px solid var(--borda);white-space:nowrap}
+th[data-k]{cursor:pointer}td{padding:9px 12px;border-bottom:1px solid #F0F0F0;vertical-align:top}tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums}
+.caps{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}.cap img{width:100%;border:1px solid var(--borda);border-radius:10px;display:block}
+ul.lista{margin:8px 0 0;padding-left:18px}ul.lista li{margin-bottom:6px}
+@media(max-width:860px){.lado{position:static;width:auto;padding:12px 0 0}.lado .marca{padding:0 16px 10px}.lado nav{display:flex;overflow-x:auto}.lado nav a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;padding:9px 13px}.lado nav a.ativo{border-bottom-color:var(--filete)}main{margin:0;padding:22px 16px 60px}h1{font-size:26px}.duas{grid-template-columns:minmax(0,1fr)}.barra{grid-template-columns:minmax(0,46%) 1fr 66px;gap:7px;font-size:13px}.grade,.videos,.caps{grid-template-columns:repeat(2,minmax(0,1fr))}input[type=search]{width:100%}}
+
+.item img{object-fit:contain;background:#F2F2F2}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}.chip{font-size:12px;border:1px solid var(--borda);border-radius:999px;padding:3px 9px;background:var(--suave)}
+</style></head><body>
+<aside class="lado"><div class="marca">Venda de sites nichada<small>Pesquisa de 21/11/2026</small></div>
+<nav><a class="ativo" href="#resumo">Resumo</a><a href="#quem">Quem está nichando</a><a href="#criativos">Criativos</a><a href="#ganchos">Ganchos</a><a href="#galeria">Galeria</a><a href="#ofertas">Ofertas e preços</a><a href="#funil">Para onde leva</a><a href="#ensina">Quem ensina a vender</a><a href="#testar">O que testar</a><a href="#players">Players</a><a href="#metodo">Limites e fontes</a></nav></aside>
+<main>
+<section id="resumo">
+<h1>Quem nicha não vende o site, vende o que o cliente do nicho encontra no Google</h1>
+<p class="lead">O anúncio nichado chama a profissão pelo nome ("Advogado,", "Psicólogo(a),", "Dentista,") e abre com uma pergunta: quando o paciente ou o cliente pesquisa você, o que ele encontra? O preço quase sempre está entre R$ 297 e R$ 599, pago uma vez, e o clique vai para o WhatsApp.</p>
+<div class="tiles">
+<div class="tile"><b>3.868</b><span>anúncios ativos no Brasil lidos</span></div>
+<div class="tile"><b>42</b><span>vendedores de site nichados</span></div>
+<div class="tile"><b>12</b><span>plataformas de nicho que já vêm com site</span></div>
+<div class="tile"><b>30 de 42</b><span>nichados atendem advogados ou saúde</span></div>
+<div class="tile"><b>26%</b><span>dos criativos nichados abrem com a dor, contra 7% nos genéricos</span></div>
+<div class="tile"><b>15%</b><span>dos textos nichados citam as regras do conselho, contra 0% nos genéricos</span></div>
+</div>
+<div class="card"><h3>O molde que mais se repete no anúncio nichado</h3><p class="sub">Observado nos anúncios. Descreve o que fazem, não prova que funciona melhor.</p>
+<ol class="molde">
+<li><b>Chamar o nicho:</b> "Advogado,", "Psicólogo(a), tenha um site à altura do seu trabalho", "Atenção, donos de clínicas".</li>
+<li><b>A cena da pesquisa:</b> o cliente pesquisa seu nome ou "dentista perto de mim" e acha o concorrente, ou só um link na bio.</li>
+<li><b>O que entrega, em lista:</b> site com sua foto, especialidades, botão de WhatsApp, aparecer no Google, e, no nicho regulado, textos dentro das regras da OAB, do CFP ou do CFM.</li>
+<li><b>Preço e prazo na arte:</b> R$ 297 "pagamento único, sem mensalidade", pronto em 24 h, 48 h ou 3 dias.</li>
+<li><b>Fechamento:</b> "Quero meu site" e WhatsApp.</li>
+</ol></div>
+<div class="aviso">Período da coleta: semana da Black Friday, então há muito anúncio novo. Só 23 dos 221 anúncios nichados passam de 60 dias no ar. Os limites estão em <a href="#metodo">Limites e fontes</a>.</div>
+</section>
+
+<section id="quem">
+<h2>Quem está nichando, e como</h2>
+<p class="sub">Separei à mão as 207 páginas que apareceram vendendo site. Sobraram 42 nichadas, 12 plataformas de nicho, 73 genéricas e 13 que ensinam a vender sites.</p>
+<div class="duas">
+<div class="card"><h3>Nichos atacados pelos 42 vendedores</h3><p class="sub">Um vendedor conta uma vez, pelo nicho principal</p>
+<div class="barras"><div class="barra" title="Advogados: 14 de 42 (33%)"><span class="b-rot">Advogados</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>33%</b> 14</span></div><div class="barra" title="Psicólogos: 5 de 42 (12%)"><span class="b-rot">Psicólogos</span><span class="b-trilho"><i style="width:35.7%"></i></span><span class="b-val"><b>12%</b> 5</span></div><div class="barra" title="Saúde em geral: 5 de 42 (12%)"><span class="b-rot">Saúde em geral</span><span class="b-trilho"><i style="width:35.7%"></i></span><span class="b-val"><b>12%</b> 5</span></div><div class="barra" title="Clínicas: 3 de 42 (7%)"><span class="b-rot">Clínicas</span><span class="b-trilho"><i style="width:21.4%"></i></span><span class="b-val"><b>7%</b> 3</span></div><div class="barra" title="Dentistas: 2 de 42 (5%)"><span class="b-rot">Dentistas</span><span class="b-trilho"><i style="width:14.3%"></i></span><span class="b-val"><b>5%</b> 2</span></div><div class="barra" title="Imobiliárias e corretores: 3 de 42 (7%)"><span class="b-rot">Imobiliárias e corretores</span><span class="b-trilho"><i style="width:21.4%"></i></span><span class="b-val"><b>7%</b> 3</span></div><div class="barra" title="Nutricionistas: 1 de 42 (2%)"><span class="b-rot">Nutricionistas</span><span class="b-trilho"><i style="width:7.1%"></i></span><span class="b-val"><b>2%</b> 1</span></div><div class="barra" title="Outros (pet, cerimonial, barbearia, arquitetos, esquadrias): 5 de 42 (12%)"><span class="b-rot">Outros (pet, cerimonial, barbearia, arquitetos, esquadrias)</span><span class="b-trilho"><i style="width:35.7%"></i></span><span class="b-val"><b>12%</b> 5</span></div><div class="barra" title="Por cidade ou região: 2 de 42 (5%)"><span class="b-rot">Por cidade ou região</span><span class="b-trilho"><i style="width:14.3%"></i></span><span class="b-val"><b>5%</b> 2</span></div><div class="barra" title="Vários nichos na mesma peça: 2 de 42 (5%)"><span class="b-rot">Vários nichos na mesma peça</span><span class="b-trilho"><i style="width:14.3%"></i></span><span class="b-val"><b>5%</b> 2</span></div></div></div>
+<div class="card"><h3>Cinco jeitos de nichar</h3>
+<ol class="passos">
+<li><b>Um nicho só, com conselho profissional.</b> Advogar Digital, Oxo e Kromma para advogados; Sites Modernos, Elismael e Notus Studio para psicólogos; Fonseca Web Studio para nutricionistas. O argumento extra é "dentro das regras da OAB / do CFP".</li>
+<li><b>Molde multinicho.</b> A mesma arte com a profissão trocada: Publys Tech (advogados, psicólogos e dentistas, R$ 297), Vytron (advogados, psicólogos, dentistas e estética), LPVende (psicólogos, advogados e médicos), Flux (clínicas e fisioterapeutas).</li>
+<li><b>Site dentro de um sistema do nicho.</b> Jusfy (58 anúncios, convênio OAB), WebPsi, ImoTools (52 anúncios), Imóvel Guide, Brovia, FREEL e Ritmo (personal).</li>
+<li><b>Agência de marketing do nicho com site no pacote.</b> Talismã e TCO (advogados), PHLM (nutricionistas), Aprimora (advogados, manutenção do site).</li>
+<li><b>Nicho por lugar.</b> "Seu negócio em São Roque", "pequenas empresas de MG", "clínica veterinária em Moema", Blumenau, Aracaju.</li>
+</ol></div>
+</div>
+<div class="aviso">Na busca, os termos com mais anúncios ativos foram "site para médicos" (1.800), "site para clínicas" (1.600) e "site para restaurantes" (1.100). Mas esse número conta todo anúncio que tem as palavras, não só quem vende site. Para restaurantes, salões, oficinas e igrejas não achei nenhum vendedor de site nichado, só genéricos. Personal trainer só aparece dentro de uma plataforma (Ritmo).</div>
+</section>
+
+<section id="criativos">
+<h2>Como são os criativos</h2>
+<p class="sub">A maior diferença está no primeiro quadro: o nichado abre com a dor do nicho, o genérico abre com o preço.</p>
+<div class="duas">
+<div class="card"><h3>Primeiro quadro, nichados</h3><p class="sub">134 criativos únicos, classificados olhando um a um</p><div class="barras"><div class="barra" title="Arte com a dor ou uma pergunta: 35 de 134 (26%)"><span class="b-rot">Arte com a dor ou uma pergunta</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>26%</b> 35</span></div><div class="barra" title="Arte de oferta com preço ou lista: 26 de 134 (19%)"><span class="b-rot">Arte de oferta com preço ou lista</span><span class="b-trilho"><i style="width:74.3%"></i></span><span class="b-val"><b>19%</b> 26</span></div><div class="barra" title="Pessoa falando: 23 de 134 (17%)"><span class="b-rot">Pessoa falando</span><span class="b-trilho"><i style="width:65.7%"></i></span><span class="b-val"><b>17%</b> 23</span></div><div class="barra" title="Mockup do site no celular ou notebook: 20 de 134 (15%)"><span class="b-rot">Mockup do site no celular ou notebook</span><span class="b-trilho"><i style="width:57.1%"></i></span><span class="b-val"><b>15%</b> 20</span></div><div class="barra" title="Marca, fundo ou outro: 20 de 134 (15%)"><span class="b-rot">Marca, fundo ou outro</span><span class="b-trilho"><i style="width:57.1%"></i></span><span class="b-val"><b>15%</b> 20</span></div><div class="barra" title="Tela gravada ou bastidor: 7 de 134 (5%)"><span class="b-rot">Tela gravada ou bastidor</span><span class="b-trilho"><i style="width:20.0%"></i></span><span class="b-val"><b>5%</b> 7</span></div><div class="barra" title="Prova de cliente: 3 de 134 (2%)"><span class="b-rot">Prova de cliente</span><span class="b-trilho"><i style="width:8.6%"></i></span><span class="b-val"><b>2%</b> 3</span></div></div></div>
+<div class="card"><h3>Primeiro quadro, genéricos</h3><p class="sub">84 criativos únicos</p><div class="barras"><div class="barra" title="Arte de oferta com preço ou lista: 34 de 84 (40%)"><span class="b-rot">Arte de oferta com preço ou lista</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>40%</b> 34</span></div><div class="barra" title="Pessoa falando: 18 de 84 (21%)"><span class="b-rot">Pessoa falando</span><span class="b-trilho"><i style="width:52.9%"></i></span><span class="b-val"><b>21%</b> 18</span></div><div class="barra" title="Mockup do site no celular ou notebook: 13 de 84 (15%)"><span class="b-rot">Mockup do site no celular ou notebook</span><span class="b-trilho"><i style="width:38.2%"></i></span><span class="b-val"><b>15%</b> 13</span></div><div class="barra" title="Marca, fundo ou outro: 12 de 84 (14%)"><span class="b-rot">Marca, fundo ou outro</span><span class="b-trilho"><i style="width:35.3%"></i></span><span class="b-val"><b>14%</b> 12</span></div><div class="barra" title="Arte com a dor ou uma pergunta: 6 de 84 (7%)"><span class="b-rot">Arte com a dor ou uma pergunta</span><span class="b-trilho"><i style="width:17.6%"></i></span><span class="b-val"><b>7%</b> 6</span></div><div class="barra" title="Tela gravada ou bastidor: 1 de 84 (1%)"><span class="b-rot">Tela gravada ou bastidor</span><span class="b-trilho"><i style="width:2.9%"></i></span><span class="b-val"><b>1%</b> 1</span></div></div></div>
+<div class="card"><h3>Formato, nichados</h3><p class="sub">221 anúncios</p><div class="barras"><div class="barra" title="Vídeo: 87 de 221 (39%)"><span class="b-rot">Vídeo</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>39%</b> 87</span></div><div class="barra" title="Dinâmico da Meta: 68 de 221 (31%)"><span class="b-rot">Dinâmico da Meta</span><span class="b-trilho"><i style="width:78.2%"></i></span><span class="b-val"><b>31%</b> 68</span></div><div class="barra" title="Imagem: 54 de 221 (24%)"><span class="b-rot">Imagem</span><span class="b-trilho"><i style="width:62.1%"></i></span><span class="b-val"><b>24%</b> 54</span></div><div class="barra" title="Carrossel: 11 de 221 (5%)"><span class="b-rot">Carrossel</span><span class="b-trilho"><i style="width:12.6%"></i></span><span class="b-val"><b>5%</b> 11</span></div><div class="barra" title="Várias imagens: 1 de 221 (0%)"><span class="b-rot">Várias imagens</span><span class="b-trilho"><i style="width:1.1%"></i></span><span class="b-val"><b>0%</b> 1</span></div></div></div>
+<div class="card"><h3>Formato, genéricos</h3><p class="sub">110 anúncios</p><div class="barras"><div class="barra" title="Vídeo: 51 de 110 (46%)"><span class="b-rot">Vídeo</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>46%</b> 51</span></div><div class="barra" title="Imagem: 33 de 110 (30%)"><span class="b-rot">Imagem</span><span class="b-trilho"><i style="width:64.7%"></i></span><span class="b-val"><b>30%</b> 33</span></div><div class="barra" title="Dinâmico da Meta: 23 de 110 (21%)"><span class="b-rot">Dinâmico da Meta</span><span class="b-trilho"><i style="width:45.1%"></i></span><span class="b-val"><b>21%</b> 23</span></div><div class="barra" title="Carrossel: 3 de 110 (3%)"><span class="b-rot">Carrossel</span><span class="b-trilho"><i style="width:5.9%"></i></span><span class="b-val"><b>3%</b> 3</span></div></div></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>O que dizem os textos</h3><p class="sub">Busca por palavras nos textos únicos. Medida aproximada.</p><div class="tab"><table><thead><tr><th>Tema no texto do anúncio</th><th class="num">Nichados (131)</th><th class="num">Genéricos (84)</th></tr></thead><tbody><tr><td>Cliente pesquisa no Google antes</td><td class="num"><b>34%</b> <span style="color:#6B6B6B">44</span></td><td class="num"><b>38%</b> <span style="color:#6B6B6B">32</span></td></tr><tr><td>Depender só do Instagram ou link na bio</td><td class="num"><b>21%</b> <span style="color:#6B6B6B">28</span></td><td class="num"><b>14%</b> <span style="color:#6B6B6B">12</span></td></tr><tr><td>Concorrente aparece no lugar</td><td class="num"><b>13%</b> <span style="color:#6B6B6B">17</span></td><td class="num"><b>14%</b> <span style="color:#6B6B6B">12</span></td></tr><tr><td>Cita confiança ou credibilidade</td><td class="num"><b>18%</b> <span style="color:#6B6B6B">24</span></td><td class="num"><b>24%</b> <span style="color:#6B6B6B">20</span></td></tr><tr><td>Botão ou integração com WhatsApp</td><td class="num"><b>47%</b> <span style="color:#6B6B6B">62</span></td><td class="num"><b>43%</b> <span style="color:#6B6B6B">36</span></td></tr><tr><td>Prazo de entrega na promessa</td><td class="num"><b>16%</b> <span style="color:#6B6B6B">21</span></td><td class="num"><b>20%</b> <span style="color:#6B6B6B">17</span></td></tr><tr><td>Mostra preço no texto</td><td class="num"><b>25%</b> <span style="color:#6B6B6B">33</span></td><td class="num"><b>42%</b> <span style="color:#6B6B6B">35</span></td></tr><tr><td>Mensalidade ou assinatura</td><td class="num"><b>14%</b> <span style="color:#6B6B6B">18</span></td><td class="num"><b>14%</b> <span style="color:#6B6B6B">12</span></td></tr><tr><td>Sem mensalidade ou pagamento único</td><td class="num"><b>7%</b> <span style="color:#6B6B6B">9</span></td><td class="num"><b>11%</b> <span style="color:#6B6B6B">9</span></td></tr><tr><td>Regras do conselho (OAB, CFP, CFM, CRO)</td><td class="num"><b>15%</b> <span style="color:#6B6B6B">19</span></td><td class="num"><b>0%</b> <span style="color:#6B6B6B">0</span></td></tr><tr><td>Black Friday ou desconto com data</td><td class="num"><b>12%</b> <span style="color:#6B6B6B">16</span></td><td class="num"><b>6%</b> <span style="color:#6B6B6B">5</span></td></tr><tr><td>Prévia ou diagnóstico grátis</td><td class="num"><b>8%</b> <span style="color:#6B6B6B">11</span></td><td class="num"><b>4%</b> <span style="color:#6B6B6B">3</span></td></tr><tr><td>Site grátis (cobra depois)</td><td class="num"><b>8%</b> <span style="color:#6B6B6B">10</span></td><td class="num"><b>7%</b> <span style="color:#6B6B6B">6</span></td></tr><tr><td>Garantia ou risco zero</td><td class="num"><b>1%</b> <span style="color:#6B6B6B">1</span></td><td class="num"><b>5%</b> <span style="color:#6B6B6B">4</span></td></tr><tr><td>Aparecer em resposta de IA (ChatGPT)</td><td class="num"><b>0%</b> <span style="color:#6B6B6B">0</span></td><td class="num"><b>1%</b> <span style="color:#6B6B6B">1</span></td></tr></tbody></table></div></div>
+<p class="sub">"Dinâmico da Meta" é o anúncio em que a Meta combina várias artes e textos sozinha. É muito usado pelos nichados mais novos (Clinarte, Flux, Publys), que sobem 3 ou 4 versões da mesma oferta.</p>
+</section>
+
+<section id="ganchos">
+<h2>Ganchos que se repetem</h2>
+<p class="sub">Frases do texto do anúncio ou da arte. Sem ordem de importância.</p>
+<div class="gancho"><h3>O que ele encontra quando pesquisa você</h3><p class="sub" style="margin:0 0 8px">O gancho mais usado pelos nichados. Põe o profissional no lugar do cliente dele.</p><ul class="lista"><li>"Seu paciente pesquisou o seu nome. O que ele encontrou?"<br><span style="color:#6B6B6B;font-size:13px">luiseduardo.dev, 2 dias no ar · Nichado: Saúde · <a href="https://www.facebook.com/ads/library/?id=4696471010674229" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Advogado, quando um cliente pesquisa o seu nome antes de ligar, o que ele encontra?"<br><span style="color:#6B6B6B;font-size:13px">Advogar Digital, 16 dias no ar · Nichado: Advogados · <a href="https://www.facebook.com/ads/library/?id=1145063474637306" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Seu paciente procura você no Google e encontra só um link na bio?"<br><span style="color:#6B6B6B;font-size:13px">clinarteagencia, 3 dias no ar · Nichado: Saúde · <a href="https://www.facebook.com/ads/library/?id=1470701981696007" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>O concorrente aparece no seu lugar</h3><p class="sub" style="margin:0 0 8px">Usa uma busca local do nicho como cena.</p><ul class="lista"><li>"Dentista, sua cadeira vazia tem um motivo: quem pesquisa “lente de contato dental perto de mim” agenda com quem aparece primeiro"<br><span style="color:#6B6B6B;font-size:13px">Vytron Solv, 1 dia no ar · Nichado: Advogados · <a href="https://www.facebook.com/ads/library/?id=1492370412828226" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Doutor(a), quando alguém pesquisa “advogado perto de mim” no Google, quem aparece: você ou o concorrente?"<br><span style="color:#6B6B6B;font-size:13px">Vytron Solv, 1 dia no ar · Nichado: Advogados · <a href="https://www.facebook.com/ads/library/?id=1181365747561261" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Todos os dias pessoas pesquisam por nutricionistas no Google"<br><span style="color:#6B6B6B;font-size:13px">PetterJones, 166 dias no ar · Nichado: Saúde · <a href="https://www.facebook.com/ads/library/?id=958827420309237" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>O Instagram não é seu</h3><p class="sub" style="margin:0 0 8px">Medo de perder o perfil ou de depender do algoritmo. O primeiro exemplo roda há 166 dias.</p><ul class="lista"><li>"Algoritmos mudam, contas podem ser bloqueadas e o alcance pode desaparecer"<br><span style="color:#6B6B6B;font-size:13px">PetterJones, 166 dias no ar · Nichado: Saúde · <a href="https://www.facebook.com/ads/library/?id=990996693530281" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Você é psicólogo(a) e ainda depende apenas das redes sociais para apresentar o seu trabalho?"<br><span style="color:#6B6B6B;font-size:13px">Sites Modernos, 119 dias no ar · Nichado: Psicólogos · <a href="https://www.facebook.com/ads/library/?id=1359237459732909" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Se o seu Instagram for bloqueado hoje, quantos clientes você perde amanhã?"<br><span style="color:#6B6B6B;font-size:13px">CASS Digital, 2 dias no ar · Genérico · <a href="https://www.facebook.com/ads/library/?id=1550994653519919" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>Cena do WhatsApp ou do atendimento</h3><p class="sub" style="margin:0 0 8px">Mostra a conversa que o profissional perde.</p><ul class="lista"><li>"O paciente chamou às 22h perguntando se tem horário amanhã. Quem respondeu?"<br><span style="color:#6B6B6B;font-size:13px">Flux Mídia e Publicidade, 2 dias no ar · Nichado: Clínicas · <a href="https://www.facebook.com/ads/library/?id=1835779044290366" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Já pensou em mandar o link do seu cerimonial e a noiva sentir, só pelo site, o cuidado que você tem"<br><span style="color:#6B6B6B;font-size:13px">Sabrina Oliveiraa, 1 dia no ar · Nichado: Eventos e cerimonial · <a href="https://www.facebook.com/ads/library/?id=1155579730324375" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>Quebrar as desculpas</h3><p class="sub" style="margin:0 0 8px">Lista as objeções e responde cada uma. A Talismã roda esse formato há 230 dias.</p><ul class="lista"><li>"Ah, mas eu só consigo clientes por indicação (fala no vídeo)"<br><span style="color:#6B6B6B;font-size:13px">Agência Digital Talismã, 230 dias no ar · Nichado: Advogados · <a href="https://www.facebook.com/ads/library/?id=944953507944691" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"“Depois eu faço.” “Já tenho Instagram.” “Minha empresa é pequena.”"<br><span style="color:#6B6B6B;font-size:13px">originstech, 2 dias no ar · Genérico · <a href="https://www.facebook.com/ads/library/?id=2564537490735348" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>Preço e prazo como gancho</h3><p class="sub" style="margin:0 0 8px">Mais comum nos genéricos, mas os nichados de preço baixo também usam.</p><ul class="lista"><li>"Site profissional para psicólogos, terapeutas e psicanalistas. Pronto em até 48 horas"<br><span style="color:#6B6B6B;font-size:13px">Elismael Santos, 4 dias no ar · Nichado: Psicólogos · <a href="https://www.facebook.com/ads/library/?id=2047205416723911" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Eu faço a sua landing page e você só paga depois de ver pronta. R$ 99"<br><span style="color:#6B6B6B;font-size:13px">Cruzetta Solucoes, 36 dias no ar · Genérico · <a href="https://www.facebook.com/ads/library/?id=1882788939827463" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li><li>"Seu site profissional de R$597 por apenas R$99!"<br><span style="color:#6B6B6B;font-size:13px">Express Sites, 1 dia no ar · Genérico · <a href="https://www.facebook.com/ads/library/?id=1470324754429948" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+<div class="gancho"><h3>Depoimento do cliente do nicho</h3><p class="sub" style="margin:0 0 8px">Pouco usado: 3 criativos de prova no recorte.</p><ul class="lista"><li>"Simplesmente não tem palavras para descrever quanto eu amei (advogada, no vídeo)"<br><span style="color:#6B6B6B;font-size:13px">Ilimitte Marketing Jurídico, 116 dias no ar · Nichado: Advogados · <a href="https://www.facebook.com/ads/library/?id=1453864926502225" target="_blank" rel="noopener">Ver na Biblioteca</a></span></li></ul></div>
+</section>
+
+<section id="galeria">
+<h2>Galeria dos criativos</h2>
+<p class="sub">Uma seleção de 51 criativos que mostram os padrões. Clique para ver o texto, a transcrição e o link da Biblioteca de Anúncios.</p>
+<div class="filtros"><button class="on" data-f="todos">Todos</button><button data-f="n">Nichados</button><button data-f="g">Genéricos</button><button data-f="e">Ensinam a vender</button></div>
+<div class="grade" id="grade"><button class="item" data-f="n" data-txt="Todos os dias pessoas pesquisam por nutricionistas no Google. Sem um site profissional, você deixa de aparecer justamente para quem já está pronto para agendar." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=958827420309237" data-tit="PetterJones" data-sub="Nichado: Saúde · 166 dias no ar · Concorrente aparece no Google" data-img="01-pesquisa/criativos/quadros/14.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/14.jpg" alt="Primeiro quadro do anúncio de PetterJones"><b>PetterJones</b><span>Concorrente aparece no Google · 166 dias</span></button><button class="item" data-f="n" data-txt="Um site profissional transmite autoridade, gera confiança e ajuda nutricionistas a conquistar mais pacientes sem depender do algoritmo das redes sociais." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=27355332950742965" data-tit="PetterJones" data-sub="Nichado: Saúde · 166 dias no ar · Instagram não basta" data-img="01-pesquisa/criativos/quadros/15.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/15.jpg" alt="Primeiro quadro do anúncio de PetterJones"><b>PetterJones</b><span>Instagram não basta · 166 dias</span></button><button class="item" data-f="n" data-txt="Antes de agendar uma consulta, muitos pacientes pesquisam seu nome. Quando não encontram um site profissional, a confiança diminui e outro nutricionista é escolhido." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1554040749400339" data-tit="PetterJones" data-sub="Nichado: Saúde · 166 dias no ar · Concorrente aparece no Google" data-img="01-pesquisa/criativos/quadros/16.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/16.jpg" alt="Primeiro quadro do anúncio de PetterJones"><b>PetterJones</b><span>Concorrente aparece no Google · 166 dias</span></button><button class="item" data-f="n" data-txt="Você é psicólogo(a) e ainda depende apenas das redes sociais para apresentar o seu trabalho?
+
+Um site profissional ajuda a organizar suas informações, apresentar sua abordagem e transmitir mais confiança antes mesmo do primeiro contato.
+
+Desenvolvemos sites personalizados para psicólogos, com:
+
+✅ Identidade visual profissional
+✅ Versão adaptada para celular
+✅ Apresentação dos atendimentos
+✅ Integração com WhatsApp
+✅ Estrutura para atendimento online e presencial
+
+Conheça nossos modelos e veja como poderia ficar o seu site." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1359237459732909" data-tit="Sites Modernos" data-sub="Nichado: Psicólogos · 119 dias no ar · Um nicho só" data-img="01-pesquisa/criativos/quadros/28.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/28.jpg" alt="Primeiro quadro do anúncio de Sites Modernos"><b>Sites Modernos</b><span>Um nicho só · 119 dias</span></button><button class="item" data-f="n" data-txt="Seu escritório parado não fatura. Enquanto você espera indicações, seus concorrentes fecham contratos pelo Google todos os dias. Tenha uma Landing Page de alta conversão feita exclusivamente para a sua área de atuação. Conquiste clientes qualificados investindo muito pouco. Kit completo: criação, hospedagem e domínio inclusos por apenas R$ 147. Toque em &quot;Saiba Mais&quot; e garanta sua presença digital hoje mesmo." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1442315494427676" data-tit="JJ company" data-sub="Nichado: Advogados · 74 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/39.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/39.jpg" alt="Primeiro quadro do anúncio de JJ company"><b>JJ company</b><span>Preço na cara · 74 dias</span></button><button class="item" data-f="n" data-txt="GESTÃO DE MARKETING PARA NUTRICIONISTAS 🥗📈
+
+Esta proposta é para nutricionistas que:
+
+✅ Já atendem pacientes toda semana (consultório ou online)
+✅ Faturam a partir de R$ 8 mil por mês
+✅ Estão cansadas de depender só de indicação e do Instagram
+✅ Querem agenda cheia, consulta mais valorizada e um consultório que cresce com previsibilidade
+
+A PHLM assume a gestão do marketing e da captação de pacientes do seu consultório, trabalhando os pilares do crescimento:
+
+📲 Tráfego pago no Meta e no Google
+📍 Google Meu Negócio
+🌐 Landing page profissional
+📸 Posicionamento no Instagram
+💬 Script comercial e atendimento no WhatsApp
+📊 CRM e acompanhamento dos contatos
+🤖 Automações e agentes de inteligência artificial
+
+Não é curso, mentoria ou fórmula para quem está começando.
+
+É um serviço personalizado de gestão de marketing para nutricionistas que já estão atendendo e querem conquistar mais pacientes, valorizar a consulta e construir uma estrutura capaz de crescer.
+
+Se você procura uma equipe para cuidar da captação e profissionalizar o seu consultório, toque no botão abaixo, responda algumas perguntas e solicite uma proposta." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2259276024916889" data-tit="PHLM Gestão de Marketing &amp; Tecnologia" data-sub="Nichado: Nutricionistas · 36 dias no ar · Dor com número do nicho" data-img="01-pesquisa/criativos/quadros/81.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/81.jpg" alt="Primeiro quadro do anúncio de PHLM Gestão de Marketing &amp; Tecnologia"><b>PHLM Gestão de Marketing &amp; Tecnologia</b><span>Dor com número do nicho · 36 dias</span></button><button class="item" data-f="n" data-txt="GESTÃO DE MARKETING PARA NUTRICIONISTAS 🥗📈
+
+Esta proposta é para nutricionistas que:
+
+✅ Já atendem pacientes toda semana (consultório ou online)
+✅ Faturam a partir de R$ 8 mil por mês
+✅ Estão cansadas de depender só de indicação e do Instagram
+✅ Querem agenda cheia, consulta mais valorizada e um consultório que cresce com previsibilidade
+
+A PHLM assume a gestão do marketing e da captação de pacientes do seu consultório, trabalhando os pilares do crescimento:
+
+📲 Tráfego pago no Meta e no Google
+📍 Google Meu Negócio
+🌐 Landing page profissional
+📸 Posicionamento no Instagram
+💬 Script comercial e atendimento no WhatsApp
+📊 CRM e acompanhamento dos contatos
+🤖 Automações e agentes de inteligência artificial
+
+Não é curso, mentoria ou fórmula para quem está começando.
+
+É um serviço personalizado de gestão de marketing para nutricionistas que já estão atendendo e querem conquistar mais pacientes, valorizar a consulta e construir uma estrutura capaz de crescer.
+
+Se você procura uma equipe para cuidar da captação e profissionalizar o seu consultório, toque no botão abaixo, responda algumas perguntas e solicite uma proposta." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1437509274377795" data-tit="PHLM Gestão de Marketing &amp; Tecnologia" data-sub="Nichado: Nutricionistas · 36 dias no ar · Cena do WhatsApp" data-img="01-pesquisa/criativos/quadros/84.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/84.jpg" alt="Primeiro quadro do anúncio de PHLM Gestão de Marketing &amp; Tecnologia"><b>PHLM Gestão de Marketing &amp; Tecnologia</b><span>Cena do WhatsApp · 36 dias</span></button><button class="item" data-f="n" data-txt="🚨 ATENÇÃO, DONOS DE CLÍNICAS!
+
+Sua clínica ainda não tem um site profissional? 
+
+🏥 Apresente seus serviços
+✨ Passe mais credibilidade
+📲 Facilite o contato pelo WhatsApp
+📅 Ajude seus pacientes a darem o próximo passo
+
+Criamos sites personalizados para clínicas, com design moderno, responsivo e entrega em até 24h.
+
+✅ Design profissional
+✅ WhatsApp integrado
+✅ 100% responsivo
+✅ Feito sob medida para sua clínica
+
+👉 Clique em “Saiba Mais” e veja como podemos criar o site da sua clínica." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1437386051824314" data-tit="Prime Asessoria" data-sub="Nichado: Clínicas · 25 dias no ar · Um nicho só" data-img="01-pesquisa/criativos/quadros/107.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/107.jpg" alt="Primeiro quadro do anúncio de Prime Asessoria"><b>Prime Asessoria</b><span>Um nicho só · 25 dias</span></button><button class="item" data-f="n" data-txt="Advogado, quando um cliente pesquisa o seu nome antes de ligar, o que ele encontra?
+
+A Advogar Digital cria sites e landing pages para escritórios de advocacia: página profissional, com a sua identidade visual, botão de WhatsApp e textos escritos dentro do Código de Ética.
+
+Você não precisa chegar com o conteúdo pronto nem entender de tecnologia. A gente parte de um briefing completo e entrega a página no ar em até 3 dias.
+
+São 5 anos de mercado, quase 10 mil projetos entregues e nota 5,0 no Google com 172 avaliações.
+
+Clique no link e veja como funciona." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1145063474637306" data-tit="Advogar Digital" data-sub="Nichado: Advogados · 16 dias no ar · Prazo curto" data-img="01-pesquisa/criativos/quadros/134.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/134.jpg" alt="Primeiro quadro do anúncio de Advogar Digital"><b>Advogar Digital</b><span>Prazo curto · 16 dias</span></button><button class="item" data-f="n" data-txt="Advogado, quando um cliente pesquisa o seu nome antes de ligar, o que ele encontra?
+
+A Advogar Digital cria sites e landing pages para escritórios de advocacia: página profissional, com a sua identidade visual, botão de WhatsApp e textos escritos dentro do Código de Ética.
+
+Você não precisa chegar com o conteúdo pronto nem entender de tecnologia. A gente parte de um briefing completo e entrega a página no ar em até 3 dias.
+
+São 5 anos de mercado, quase 10 mil projetos entregues e nota 5,0 no Google com 172 avaliações.
+
+Clique no link e veja como funciona." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1657906665840260" data-tit="Advogar Digital" data-sub="Nichado: Advogados · 15 dias no ar · Cena do clique" data-img="01-pesquisa/criativos/quadros/142.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/142.jpg" alt="Primeiro quadro do anúncio de Advogar Digital"><b>Advogar Digital</b><span>Cena do clique · 15 dias</span></button><button class="item" data-f="n" data-txt="[PE] Landing Page - Criação de Site | Advogar Digital" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1516165830322113" data-tit="Advogar Digital" data-sub="Nichado: Advogados · 15 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/143.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/143.jpg" alt="Primeiro quadro do anúncio de Advogar Digital"><b>Advogar Digital</b><span>Preço na cara · 15 dias</span></button><button class="item" data-f="n" data-txt="💈 Sua barbearia merece uma agenda movimentada!
+
+Transforme seu negócio em uma vitrine online profissional e facilite os agendamentos pelo WhatsApp! 📲
+
+✅ Site profissional e personalizado
+✅ Botão direto para o WhatsApp
+✅ Pronto em até 60 minutos
+✅ Pagamento único, sem mensalidades!
+
+🔥 Tudo isso por apenas R$197!
+
+👇 Clique em Saiba Mais e solicite o seu agora!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1907375763976138" data-tit="Mago Digital" data-sub="Nichado: Barbearias · 12 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/158.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/158.jpg" alt="Primeiro quadro do anúncio de Mago Digital"><b>Mago Digital</b><span>Preço na cara · 12 dias</span></button><button class="item" data-f="n" data-txt="🚀 Seu negócio merece mais clientes e mais oportunidades de venda!
+
+Tenha uma presença profissional na internet, valorize sua marca e facilite o contato de novos clientes diretamente pelo WhatsApp! 📲
+
+✅ Site profissional e personalizado  
+✅ Botão direto para o WhatsApp  
+✅ Apresente seus produtos e serviços  
+✅ Pronto em até 60 minutos  
+✅ Pagamento único, sem mensalidades!
+
+🔥 Tudo isso por apenas R$197!
+
+👇 Clique em Saiba Mais e solicite o seu agora!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1092874867127966" data-tit="Mago Digital" data-sub="Nichado: Barbearias · 12 dias no ar · Prazo curto" data-img="01-pesquisa/criativos/quadros/162.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/162.jpg" alt="Primeiro quadro do anúncio de Mago Digital"><b>Mago Digital</b><span>Prazo curto · 12 dias</span></button><button class="item" data-f="n" data-txt="Criação e renovação de sites para advogados e escritórios de advocacia.
+
+Seu site faz justiça ao seu escritório?
+
+Apresente sua equipe, suas áreas de atuação e seus canais de contato em um site desenvolvido sob medida pela OXO, com navegação adaptada ao celular.
+
+Alto padrão. Preço justo.
+
+Preencha o formulário para solicitar um orçamento para criar ou renovar seu site." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2930462337335194" data-tit="Oxo Soluções Digitais" data-sub="Nichado: Advogados · 10 dias no ar · Um nicho só" data-img="01-pesquisa/criativos/quadros/176.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/176.jpg" alt="Primeiro quadro do anúncio de Oxo Soluções Digitais"><b>Oxo Soluções Digitais</b><span>Um nicho só · 10 dias</span></button><button class="item" data-f="n" data-txt="O paciente encontrou sua clínica no Google. Quando ele abre seu site, o que encontra?
+
+Em tratamentos como implantes, facetas e alinhadores, o site ajuda o paciente a conhecer a clínica, entender o tratamento e decidir se vale a pena chamar no WhatsApp.
+
+Criamos sites premium para clínicas médicas e odontológicas, pensados para apresentar sua equipe, sua estrutura e seus procedimentos com clareza e facilitar o primeiro contato.
+
+No vídeo, você vê o site que desenvolvemos para a Odonto Guará. Conheça o projeto e veja o que podemos fazer para a sua clínica." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1860644228404852" data-tit="Google Primeira Página" data-sub="Nichado: Dentistas · 9 dias no ar · Pergunta ao nicho" data-img="01-pesquisa/criativos/quadros/178.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/178.jpg" alt="Primeiro quadro do anúncio de Google Primeira Página"><b>Google Primeira Página</b><span>Pergunta ao nicho · 9 dias</span></button><button class="item" data-f="n" data-txt="Sua clínica veterinária ou pet shop em Moema merece ser lembrado antes da próxima escolha do cliente.
+
+A Expresso 3 une estratégia de marketing, gestão de redes sociais, design e criação de sites para apresentar o valor do seu negócio e apoiar seu departamento comercial.
+
+Veja exemplos do nosso trabalho no carrossel e conheça nossas soluções no site.
+
+Quer conversar sobre a sua marca? WhatsApp: (11) 91727-0040." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2470006413527293" data-tit="Expresso 3 Marketing Digital" data-sub="Nichado: Pet e veterinária · 5 dias no ar · Nicho e bairro" data-img="01-pesquisa/criativos/quadros/216.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/216.jpg" alt="Primeiro quadro do anúncio de Expresso 3 Marketing Digital"><b>Expresso 3 Marketing Digital</b><span>Nicho e bairro · 5 dias</span></button><button class="item" data-f="n" data-txt="Seu escritório pode ter projetos incríveis. Mas, se eles não são apresentados da forma certa, parte desse valor se perde.
+
+Um site bem desenvolvido para um escritório de arquitetura vai muito além de “estar na internet”.
+
+Ele ajuda a:
+
+• Valorizar cada projeto com uma apresentação visual à altura do seu trabalho
+• Transmitir mais profissionalismo e credibilidade desde o primeiro contato
+• Fortalecer o posicionamento e a identidade do escritório
+• Organizar seu portfólio de forma clara, elegante e estratégica
+• Diferenciar seu escritório de outros profissionais do mercado
+• Aumentar a percepção de valor dos seus serviços
+• Facilitar o contato de potenciais clientes interessados em novos projetos
+• Criar um canal próprio, sem depender apenas do Instagram para apresentar seu trabalho
+• Ser encontrado por pessoas que já estão buscando um arquiteto
+• Transformar visitas ao site em novas oportunidades comerciais
+
+Seu site precisa causar a mesma impressão que os seus melhores projetos causam.
+
+Desenvolvemos sites pensados especialmente para escritórios e studios de arquitetura, unindo design, experiência e estratégia para valorizar o seu trabalho e gerar novas oportunidades.
+
+Entre em contato e vamos criar um site à altura do seu escritório." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1164195169388491" data-tit="Bernardo Wainer" data-sub="Nichado: Arquitetos · 5 dias no ar · Bastidor" data-img="01-pesquisa/criativos/quadros/226.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/226.jpg" alt="Primeiro quadro do anúncio de Bernardo Wainer"><b>Bernardo Wainer</b><span>Bastidor · 5 dias</span></button><button class="item" data-f="n" data-txt="Dentista, sua clínica aparece quando o paciente procura no Google? 🦷
+
+Hoje o paciente pesquisa &quot;dentista perto de mim&quot; antes de marcar. Se sua clínica não tem site, ele marca no concorrente.
+
+A FantiLabs cria o site da sua clínica por R$ 99,00/mês:
+
+✅ Site bonito e rápido no celular
+✅ Botão que leva o paciente direto pro seu WhatsApp
+✅ Mostra tratamentos, horário e endereço
+✅ Domínio e hospedagem inclusos
+✅ Cuidado diário com o site, você não se preocupa com nada
+✅ Sem taxa de implantação
+
+🎁 Peça uma prévia grátis: a gente monta um exemplo do site da sua clínica antes de você fechar.
+
+👉 Toque em Enviar mensagem e fale com a gente.
+🌐 fantilabs.com" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1403809634923066" data-tit="Fantilabs" data-sub="Nichado: Dentistas · 4 dias no ar · Mensalidade" data-img="01-pesquisa/criativos/quadros/228.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/228.jpg" alt="Primeiro quadro do anúncio de Fantilabs"><b>Fantilabs</b><span>Mensalidade · 4 dias</span></button><button class="item" data-f="n" data-txt="Site profissional para psicólogos, terapeutas e psicanalistas.
+
+✅ Pronto em até 48 horas
+✅ Sua foto, sua abordagem e seus diferenciais
+✅ Botão direto para o seu WhatsApp
+✅ Endereço profissional e hospedagem inclusos
+✅ Perfeito no celular
+
+💰 R$ 97, pagamento único. Sem mensalidade.
+
+Toque em &quot;Enviar mensagem&quot; e veja modelos prontos." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2047205416723911" data-tit="Elismael Santos" data-sub="Nichado: Psicólogos · 4 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/229.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/229.jpg" alt="Primeiro quadro do anúncio de Elismael Santos"><b>Elismael Santos</b><span>Preço na cara · 4 dias</span></button><button class="item" data-f="n" data-txt="Psicóloga ou psicólogo: explica sua abordagem a cada pessoa que chama? Uma página mostra isso antes da primeira mensagem.
+
+Formação, CRP, abordagem e se você atende online ou presencial, com o botão do WhatsApp à vista. Os textos são escritos com as regras de publicidade do CFP em vista: sem promessa de resultado e sem expor quem você atende.
+
+Comece pelo diagnóstico da página: 20 a 30 minutos de conversa, 3 achados. Sem custo, e não é uma compra.
+
+25% de desconto nos pacotes até 30/11. Sites a partir de R$ 1.890, em até 12 vezes (consulte as taxas de parcelamento)." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2652623841850481" data-tit="LPVende" data-sub="Nichado: Psicólogos · 4 dias no ar · Diagnóstico grátis" data-img="01-pesquisa/criativos/quadros/230.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/230.jpg" alt="Primeiro quadro do anúncio de LPVende"><b>LPVende</b><span>Diagnóstico grátis · 4 dias</span></button><button class="item" data-f="n" data-txt="Advogada ou advogado: te indicam e você não tem um link para mandar? Uma página sóbria, com suas áreas e o WhatsApp à vista.
+
+Feita com as regras de publicidade da OAB em vista: informação clara, sem promessa de resultado. A mesma página recebe quem vem de indicação e quem vem de anúncio.
+
+Comece pelo diagnóstico da página: 20 a 30 minutos de conversa, 3 achados. Sem custo, e não é uma compra.
+
+25% de desconto nos pacotes até 30/11. Sites a partir de R$ 1.890, em até 12 vezes (consulte as taxas de parcelamento)." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1847610939693392" data-tit="LPVende" data-sub="Nichado: Psicólogos · 4 dias no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/240.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/240.jpg" alt="Primeiro quadro do anúncio de LPVende"><b>LPVende</b><span>Molde multinicho · 4 dias</span></button><button class="item" data-f="n" data-txt="Vai começar a anunciar? Quem clica quer entender o serviço em segundos. Se não entende, volta, e o clique já foi pago.
+
+Uma página feita para receber quem vem do anúncio: o seu serviço explicado e o botão do WhatsApp à vista. Serve para o Google, para o Instagram e para o link da bio. Nós fazemos a página; o anúncio segue com você ou com quem já cuida dele.
+
+Comece pelo diagnóstico da página: 20 a 30 minutos de conversa, 3 achados. Sem custo, e não é uma compra.
+
+25% de desconto nos pacotes até 30/11. Sites a partir de R$ 1.890, em até 12 vezes (consulte as taxas de parcelamento)." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1386468516710585" data-tit="LPVende" data-sub="Nichado: Psicólogos · 4 dias no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/244.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/244.jpg" alt="Primeiro quadro do anúncio de LPVende"><b>LPVende</b><span>Molde multinicho · 4 dias</span></button><button class="item" data-f="n" data-txt="Médico ou clínica: o paciente pergunta convênio e endereço pelo WhatsApp? Uma página responde isso antes de ele chamar.
+
+Formação, CRM e RQE, convênios, endereço e como marcar, com o botão do WhatsApp à vista. Os textos são escritos com as regras de publicidade do CFM em vista: sem antes e depois e sem promessa de resultado.
+
+Comece pelo diagnóstico da página: 20 a 30 minutos de conversa, 3 achados. Sem custo, e não é uma compra.
+
+25% de desconto nos pacotes até 30/11. Sites a partir de R$ 1.890, em até 12 vezes (consulte as taxas de parcelamento)." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1437966058546917" data-tit="LPVende" data-sub="Nichado: Psicólogos · 4 dias no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/245.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/245.jpg" alt="Primeiro quadro do anúncio de LPVende"><b>LPVende</b><span>Molde multinicho · 4 dias</span></button><button class="item" data-f="n" data-txt="Seu paciente procura você no Google e encontra só um link na bio? 🤔
+
+A Clinarte cria sites e landing pages para profissionais da saúde e da estética: dentistas, biomédicos, HOF, médicos, nutricionistas e clínicas.
+
+✔️ Design com a sua identidade
+✔️ Pensado para o celular
+✔️ Botão direto para o seu WhatsApp
+✔️ Pronto para aparecer no Google
+
+Sua página a partir de R$ 429, em até 6x no cartão.
+
+Toque no anúncio, veja nosso site e me chama no WhatsApp que eu te mostro exemplos de sites que já entregamos." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1470701981696007" data-tit="clinarteagencia" data-sub="Nichado: Saúde · 3 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/251.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/251.jpg" alt="Primeiro quadro do anúncio de clinarteagencia"><b>clinarteagencia</b><span>Preço na cara · 3 dias</span></button><button class="item" data-f="n" data-txt="Quer ver o site novo da sua clínica antes de pagar? Na Flux, a proposta de site vem com uma prévia pronta para você ver.
+
+Diagnóstico por escrito em até 48 horas úteis, sem custo. Foto criada com IA. A Fisio Sumaúma é um negócio fictício." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1322709379948370" data-tit="Flux Mídia e Publicidade" data-sub="Nichado: Clínicas · 3 dias no ar · Diagnóstico grátis" data-img="01-pesquisa/criativos/quadros/264.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/264.jpg" alt="Primeiro quadro do anúncio de Flux Mídia e Publicidade"><b>Flux Mídia e Publicidade</b><span>Diagnóstico grátis · 3 dias</span></button><button class="item" data-f="n" data-txt="⚖️ Você estudou Direito para cuidar dos seus clientes e processos. Mas quem cuida dos clientes enquanto você está ocupado trabalhando?
+
+Se você trabalha sozinho, provavelmente já passou por isso:
+
+📲 Uma mensagem chega no WhatsApp enquanto você está elaborando uma petição.
+
+📞 Um possível cliente tenta entrar em contato enquanto você está em uma reunião.
+
+⏳ Quando finalmente consegue responder, aquela oportunidade já esfriou ou o cliente procurou outro profissional.
+
+E o pior: você sabe que precisa de alguém para cuidar do atendimento, mas contratar uma secretária agora pode pesar no orçamento.
+
+Mas e se você pudesse ter uma estrutura profissional de atendimento sem precisar contratar uma funcionária?
+
+É exatamente isso que desenvolvemos!
+
+🚀 Desenvolvemos sites institucionais para advogados com secretárias digitais capazes de:
+
+✅ Fazer o primeiro atendimento dos interessados.
+
+✅ Responder dúvidas e apresentar suas áreas de atuação.
+
+✅ Atender pelo WhatsApp, Instagram e Facebook.
+
+✅ Coletar informações e identificar potenciais clientes.
+
+✅ Ajudar no agendamento de reuniões.
+
+✅ Manter seu atendimento disponível 24 horas por dia.
+
+Enquanto você cuida dos processos, sua estrutura digital continua trabalhando para receber e organizar novos contatos.
+
+Você não precisa esperar seu escritório crescer para começar a trabalhar com uma estrutura mais profissional.
+
+E não precisa fazer tudo sozinho para sempre.
+
+⚖️ Seu conhecimento merece uma estrutura à altura.
+
+📩 Envie a palavra ADVOGADO no nosso Messenger e te explicamos melhor!
+
+👉 📱 91 9 9276 4336
+
+#siteparaadvogados
+#sitecomsecretariadigital" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1675274010659514" data-tit="Elévant • Sites • Agência de IA • Negócios Digitais" data-sub="Nichado: Advogados · 2 dias no ar · Um nicho só" data-img="01-pesquisa/criativos/quadros/280.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/280.jpg" alt="Primeiro quadro do anúncio de Elévant • Sites • Agência de IA • Negócios Digitais"><b>Elévant • Sites • Agência de IA • Negócios Digitais</b><span>Um nicho só · 2 dias</span></button><button class="item" data-f="n" data-txt="Já pensou em mandar o link do seu cerimonial e a noiva sentir, só pelo site, o cuidado que você tem em cada evento? 🤍
+
+Eu crio sites pra cerimonialistas, espaços de eventos e celebrantes, pensados do começo ao fim pra mostrar o seu trabalho com a mesma delicadeza que você coloca nos casamentos
+
+🖤 Black até 30/11: de R$1.597 por R$997
+Pronto em até 10 dias úteis · domínio incluso · Pix ou até 12x
+
+Vamos conversar sobre o seu? Toque em “Enviar mensagem”" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1155579730324375" data-tit="Sabrina Oliveiraa" data-sub="Nichado: Eventos e cerimonial · 1 dia no ar · Bastidor" data-img="01-pesquisa/criativos/quadros/294.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/294.jpg" alt="Primeiro quadro do anúncio de Sabrina Oliveiraa"><b>Sabrina Oliveiraa</b><span>Bastidor · 1 dia</span></button><button class="item" data-f="n" data-txt="Doutor(a), quando alguém pesquisa &quot;advogado perto de mim&quot; no Google, quem aparece: você ou o concorrente? ⚖️
+
+Criamos o site do seu escritório de advocacia: profissional, dentro das normas da OAB, otimizado para o Google e com botão direto para o seu WhatsApp.
+
+✅ Áreas de atuação bem explicadas
+✅ Aparece no Google da sua cidade
+✅ Pronto para celular
+✅ A partir de R$ 599,90
+
+Toque em &quot;Enviar mensagem&quot; e receba uma proposta pelo WhatsApp." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1181365747561261" data-tit="Vytron Solv" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/298.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/298.jpg" alt="Primeiro quadro do anúncio de Vytron Solv"><b>Vytron Solv</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Dona de clínica de estética: seu Instagram atrai, mas é o site que vende. ✨
+
+Quem pesquisa &quot;harmonização facial perto de mim&quot; agenda com quem passa mais confiança no Google. Criamos o site da sua clínica com visual premium, galeria de resultados, protocolos explicados e agendamento direto no seu WhatsApp.
+
+✅ Integra com seu Instagram
+✅ Aparece no Google
+✅ Pronto para celular
+✅ A partir de R$ 599,90
+
+Toque em &quot;Enviar mensagem&quot; e receba uma proposta pelo WhatsApp." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2183464082298731" data-tit="Vytron Solv" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/305.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/305.jpg" alt="Primeiro quadro do anúncio de Vytron Solv"><b>Vytron Solv</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Psicólogo(a), seu próximo paciente já está procurando por &quot;psicóloga online ansiedade&quot;. Ele encontra você? 🌿
+
+Criamos o seu site de psicólogo(a): acolhedor, ético e alinhado ao CFP, com sua abordagem explicada e contato discreto direto pelo WhatsApp.
+
+✅ Atendimento online e presencial em destaque
+✅ Aparece no Google
+✅ Passa segurança antes da primeira sessão
+✅ A partir de R$ 599,90
+
+Toque em &quot;Enviar mensagem&quot; e receba uma proposta pelo WhatsApp." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1153616170949566" data-tit="Vytron Solv" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/307.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/307.jpg" alt="Primeiro quadro do anúncio de Vytron Solv"><b>Vytron Solv</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Dentista, sua cadeira vazia tem um motivo: quem pesquisa &quot;lente de contato dental perto de mim&quot; agenda com quem aparece primeiro no Google. 🦷
+
+Criamos o site da sua clínica odontológica: profissional, com página para cada tratamento, antes e depois e agendamento direto no seu WhatsApp.
+
+✅ Aparece no Google da sua cidade
+✅ Passa confiança antes da primeira consulta
+✅ Pronto para celular
+✅ A partir de R$ 599,90
+
+Toque em &quot;Enviar mensagem&quot; e receba uma proposta pelo WhatsApp." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1492370412828226" data-tit="Vytron Solv" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/308.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/308.jpg" alt="Primeiro quadro do anúncio de Vytron Solv"><b>Vytron Solv</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Uma presença digital profissional faz parte da apresentação de um escritório de advocacia. ⚖️
+
+Desenvolvemos sites institucionais modernos, personalizados e adaptados para celular, com estrutura informativa pensada para as diretrizes de publicidade da OAB.
+
+✅ Criação por R$297
+✅ Pagamento único, sem mensalidade obrigatória
+✅ 1 ano de hospedagem incluído
+
+💬 Conheça nossos modelos pelo WhatsApp!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2844498082610894" data-tit="Publys Tech" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/302.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/302.jpg" alt="Primeiro quadro do anúncio de Publys Tech"><b>Publys Tech</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Sua apresentação profissional também merece cuidado! 🌿
+
+Criamos sites personalizados para profissionais de Psicologia, com espaço para apresentar formação, abordagem, modalidades de atendimento e informações de contato.
+
+✅ Site profissional por R$297
+✅ Pagamento único, sem mensalidade obrigatória
+✅ 1 ano de hospedagem incluído
+
+💬 Fale conosco e conheça os modelos!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2411531172991290" data-tit="Publys Tech" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/311.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/311.jpg" alt="Primeiro quadro do anúncio de Publys Tech"><b>Publys Tech</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="Um consultório profissional merece uma presença digital à altura! 🦷
+
+Tenha um site moderno, personalizado e adaptado para celular, com botão de contato pelo WhatsApp.
+
+✅ Pagamento único de R$297
+✅ Sem mensalidade obrigatória
+✅ 1 ano de hospedagem incluído
+
+💬 Fale conosco e conheça nossos modelos!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1330795425789748" data-tit="Publys Tech" data-sub="Nichado: Advogados · 1 dia no ar · Molde multinicho" data-img="01-pesquisa/criativos/quadros/312.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/312.jpg" alt="Primeiro quadro do anúncio de Publys Tech"><b>Publys Tech</b><span>Molde multinicho · 1 dia</span></button><button class="item" data-f="n" data-txt="“Advogado… enquanto você ainda duvida do tráfego, tem gente fechando contrato todo dia.”
+
+Enquanto você depende de indicação, outros escritórios estão construindo audiência, autoridade e previsibilidade.
+
+Na Talismã Digital, nós transformamos perfis comuns em máquinas de atração de clientes — com estratégia, conteúdo e tráfego.
+
+Se você quer parar de correr atrás de clientes e começar a ser procurado, o primeiro passo é construir presença.
+&quot;Siga o perfil e comece a atrair clientes todos os dias.&quot;" data-tr="Ah, mas eu só consigo clientes por indicação.
+Então, ver o meu falar em marketing jurídico.
+Ah, mas eu não tenho tempo de ficar expondo ainda o lead esnuazápido.
+Fique tranquilo, nós temos o Mi-A que reira.
+responde por você. Ah mas eu não tenho tempo para postar nas redes sociais. Nós temos um time que cria e posta para você.
+Ah mas eu não sei, editar vídeos. Nós temos um time.
+que é dita pra você. Ai eu não divulgo porque não entendo das normas do AB.
+Nós trabalho é realizado de acordo com as normas do AB. Agora você não tem mais desculpas né?
+e conheça a palisma.
+A cissoria de marketing jurídico que mais cresce no Brasil." data-lib="https://www.facebook.com/ads/library/?id=944953507944691" data-tit="Agência Digital Talismã" data-sub="Nichado: Advogados · 230 dias no ar · Quebra de objeção" data-img="01-pesquisa/criativos/quadros/5.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/5.jpg" alt="Primeiro quadro do anúncio de Agência Digital Talismã"><b>Agência Digital Talismã</b><span>Quebra de objeção · 230 dias</span></button><button class="item" data-f="n" data-txt="⚠️ATENÇÃO ADVOGADO ⚠️
+
+Advogado e advogada: Destaque-se no mercado com uma identidade visual profissional.
+
+Criamos soluções exclusivas para advogados e escritórios de advocacia:
+
+✅ Logotipo exclusivo
+✅ Identidade visual completa
+✅ Logotipo vetorizado (PDF, AI e EPS)
+✅ Arquivo em PNG sem fundo
+✅ Símbolo e marca d&#x27;água
+✅ Mockups 3D da marca
+✅ Manual da marca
+✅ Tipografia personalizada
+✅ Paleta de cores exclusiva
+✅ Papel timbrado (Word)
+✅ Cartão de visitas (arte)
+✅ Assinatura profissional de e-mail
+✅ Arte para pasta e envelope
+✅ Cartão digital interativo (PDF)
+✅ Foto de perfil para redes sociais
+✅ Capas para redes sociais
+✅ Wallpapers para computador e smartphone
+✅ Site profissional para advogados
+✅ Landing Page de alta conversão
+
+Todos os materiais são 100% digitais, desenvolvidos exclusivamente para advogados que desejam transmitir credibilidade, autoridade e profissionalismo.
+
+Fale agora com um especialista e solicite uma apresentação do nosso portfólio." data-tr="Simplesmente não tem palavras para descrever quanto eu amei.
+Essas são palavras, a doutora Jamilh, que escolheu a ilimiter para desenvolver o logo tipo
+E aí, bens de lá, gira.
+visóvela e escritoria dela.
+Adivogado, quer ter um logotivo profissional e eu a identidade visual que representa a sua
+evocacia?
+Clique agora no botão que está aparecendo na sua tela.
+e faça como a doutora de a mil e tantos outros advogados que escolheram a ilimiter para criar
+não só o logotipo, mas toda a identidade visual do seu excretor de advogado.
+clica no botão que está aparecendo na sua tela, você vai ser direcionado para falar
+com os nossos especialistas que vai te mostrar, aqui na ilimiter você, além do logotipo,
+recebe também tudo aquilo que você precisa para aumentar a capitalização de mais clientes para o seu escritório.
+Porque além do logotip, nós entregamos a arte do cartão de visita já com um vídeo.
+que é ricord de inclusive para facilitar o contato pelo WhatsApp, papel timbrado em hoje,
+na natura digital de meio e ainda o cartão de tá interativo que hoje.
+Hoje é o que ele dina dos advogados, porque facilita o atendimento e te ajuda a compartilhar
+com mais facilidade para todos os seus contatos por meio de lista de transoscições.
+e grupo de WhatsApp. Então, agora é sua vez.
+Clica no botão que está aparecendo na sua tela e fale agora mesmo
+com os nossos especialistas pelo WhatsApp." data-lib="https://www.facebook.com/ads/library/?id=1453864926502225" data-tit="Ilimitte Marketing Jurídico" data-sub="Nichado: Advogados · 116 dias no ar · Prova de cliente" data-img="01-pesquisa/criativos/quadros/31.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/31.jpg" alt="Primeiro quadro do anúncio de Ilimitte Marketing Jurídico"><b>Ilimitte Marketing Jurídico</b><span>Prova de cliente · 116 dias</span></button><button class="item" data-f="g" data-txt="Não caia no golpe do site caro!
+
+Site não precisa custar uma fortuna para te dar RESULTADO! 
+
+Nós resolvemos isso pra você.
+Criamos um site profissional pra você por R$90,00 por mês.
+
+Clica no link abaixo e agende uma reunião com nossa equipe." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1486000156624734" data-tit="Brain - Desenvolvimento de Sites" data-sub="Genérico · 63 dias no ar · Ancoragem de preço" data-img="01-pesquisa/criativos/quadros/53.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/53.jpg" alt="Primeiro quadro do anúncio de Brain - Desenvolvimento de Sites"><b>Brain - Desenvolvimento de Sites</b><span>Ancoragem de preço · 63 dias</span></button><button class="item" data-f="g" data-txt="Criação de Sites e Lojas Virtuais por R$ 99,00" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1801479594304206" data-tit="Conexão Total Comunicação e Marketing" data-sub="Genérico · 30 dias no ar · Paga na entrega" data-img="01-pesquisa/criativos/quadros/100.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/100.jpg" alt="Primeiro quadro do anúncio de Conexão Total Comunicação e Marketing"><b>Conexão Total Comunicação e Marketing</b><span>Paga na entrega · 30 dias</span></button><button class="item" data-f="g" data-txt="Pare de perder cliente por não ter página!
+
+Eu crio sua Página de Vendas em 48h por APENAS R$ 100.
+
+✅ Já com hospedagem
+✅ Já publicada
+✅ Pronta pro celular
+✅ Botão direto pro seu WhatsApp
+
+Sem mensalidade obrigatória. Você me manda texto e foto e eu coloco no ar.
+
+Conheça agora e garante a sua 👇" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1146693021165935" data-tit="Btech Marketing Produtos e Serviços Digitais" data-sub="Genérico · 20 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/113.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/113.jpg" alt="Primeiro quadro do anúncio de Btech Marketing Produtos e Serviços Digitais"><b>Btech Marketing Produtos e Serviços Digitais</b><span>Preço na cara · 20 dias</span></button><button class="item" data-f="g" data-txt="*Sua empresa precisa de um site profissional? A Flash Sites tem o plano ideal para você!*
+
+Criamos sites modernos, personalizados e responsivos, pensados para valorizar sua marca e transformar visitantes em oportunidades de negócio.
+
+Conheça nossos planos:
+
+*Flash Start | R$ 697*
+Landing page profissional para apresentar seu negócio e captar clientes.
+
+*Flash Pro | R$ 1.497*
+Site institucional completo, com até 5 páginas, SEO e recursos para fortalecer sua presença digital.
+
+*Flash Commerce | R$ 2.197*
+Sua loja virtual completa, com carrinho, pagamentos integrados e estrutura para vender online.
+
+Seu negócio merece uma presença digital à altura do que oferece.
+
+*Fale com a Flash Sites e escolha seu plano!*" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1794402411837739" data-tit="Flash Sites - Arquitetura Digital" data-sub="Genérico · 10 dias no ar · Três pacotes" data-img="01-pesquisa/criativos/quadros/174.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/174.jpg" alt="Primeiro quadro do anúncio de Flash Sites - Arquitetura Digital"><b>Flash Sites - Arquitetura Digital</b><span>Três pacotes · 10 dias</span></button><button class="item" data-f="g" data-txt="🚀 SUA EMPRESA AINDA NÃO TEM SITE?
+
+Nós resolvemos para você!
+
+💻 Sites profissionais a partir de 10x R$ 69,90 sem juros.
+
+📲 Solicite seu orçamento pelo WhatsApp!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2897825210600516" data-tit="Solarb Energia Solar Fotovoltaica" data-sub="Genérico · 7 dias no ar · Três pacotes" data-img="01-pesquisa/criativos/quadros/197.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/197.jpg" alt="Primeiro quadro do anúncio de Solarb Energia Solar Fotovoltaica"><b>Solarb Energia Solar Fotovoltaica</b><span>Três pacotes · 7 dias</span></button><button class="item" data-f="g" data-txt="Nós montamos seu site 🎯
+
+Toque em &quot;Saiba Mais&quot; e fale com nosso consultor" data-tr="[Música]
+[Música]" data-lib="https://www.facebook.com/ads/library/?id=1315873483897586" data-tit="OPS Empresas" data-sub="Genérico · 95 dias no ar · Mensalidade" data-img="01-pesquisa/criativos/quadros/36.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/36.jpg" alt="Primeiro quadro do anúncio de OPS Empresas"><b>OPS Empresas</b><span>Mensalidade · 95 dias</span></button><button class="item" data-f="g" data-txt="Seu negócio merece um site profissional! 🖤 Na Black da Luma, a criação de sites está com uma oferta especial. Apresente seus serviços, fortaleça sua presença online e facilite o contato com seus clientes. Clique e confira as condições!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2076680766318199" data-tit="lumadigital.web" data-sub="Genérico · 4 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/236.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/236.jpg" alt="Primeiro quadro do anúncio de lumadigital.web"><b>lumadigital.web</b><span>Preço na cara · 4 dias</span></button><button class="item" data-f="g" data-txt="Sua empresa ainda não tem site? Em poucos dias você tem um site profissional no ar, já cadastrado no Google e nos mapas, e edita tudo sozinho pelo painel. Criação por R$ 597 (em vez de R$ 897) e R$ 69 por mês, sem fidelidade. Atendemos empresas de todo o Brasil." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1145278335068836" data-tit="Escolha seu Site" data-sub="Genérico · 3 dias no ar · Preço na cara" data-img="01-pesquisa/criativos/quadros/256.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/256.jpg" alt="Primeiro quadro do anúncio de Escolha seu Site"><b>Escolha seu Site</b><span>Preço na cara · 3 dias</span></button><button class="item" data-f="g" data-txt="“Depois eu faço.” “Já tenho Instagram.” “Minha empresa é pequena.” Já usou alguma dessas desculpas pra adiar o site do seu negócio? 👀
+
+Um site pode reunir seus serviços, fotos, localização e contato em um só lugar. Assim, quem acabou de conhecer sua empresa consegue entender o que você faz e pedir um orçamento com facilidade.
+
+Na Origins Tech, eu crio sites para pequenos negócios de Ibiúna, São Roque e região. Quer ver como ficaria um site para o seu negócio? Me chama no Direct." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2564537490735348" data-tit="originstech" data-sub="Genérico · 2 dias no ar · Quebra de objeção" data-img="01-pesquisa/criativos/quadros/272.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/272.jpg" alt="Primeiro quadro do anúncio de originstech"><b>originstech</b><span>Quebra de objeção · 2 dias</span></button><button class="item" data-f="g" data-txt="Se o seu Instagram for bloqueado hoje, quantos clientes você perde amanhã?
+
+Portfólio, avaliações, contatos... tudo dentro de um perfil que não é seu. Uma denúncia ou uma conta hackeada e anos de trabalho somem.
+
+Uma landing page é o endereço do seu negócio que ninguém tira de você. Profissional, com a sua identidade e levando o cliente direto pro seu WhatsApp.
+
+💰 R$500, pagamento único. Sem mensalidade.
+
+Preencha o formulário para a gente criar seu site ainda hoje!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1550994653519919" data-tit="CASS Digital" data-sub="Genérico · 2 dias no ar · Quebra de objeção" data-img="01-pesquisa/criativos/quadros/276.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/276.jpg" alt="Primeiro quadro do anúncio de CASS Digital"><b>CASS Digital</b><span>Quebra de objeção · 2 dias</span></button><button class="item" data-f="g" data-txt="🔥 BLACK FRIDAY – SÓ HOJE
+Seu site profissional de R$597 por apenas R$99!
+
+✅ Domínio e hospedagem inclusos
+✅ Layout profissional e adaptado ao celular
+✅ Botão direto pro seu WhatsApp
+✅ Entrega rápida
+
+Perfeito pra quem quer vender mais e passar confiança: tatuadores, massoterapeutas, lojas de roupa e acessórios, confeitarias, advogados e outros negócios locais.
+
+👉 Toque em &quot;Enviar mensagem&quot; e garanta o seu antes que a promoção acabe." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1470324754429948" data-tit="Express Sites" data-sub="Genérico · 1 dia no ar · Ancoragem de preço" data-img="01-pesquisa/criativos/quadros/299.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/299.jpg" alt="Primeiro quadro do anúncio de Express Sites"><b>Express Sites</b><span>Ancoragem de preço · 1 dia</span></button><button class="item" data-f="n" data-txt="Ter um site profissional não precisa custar uma fortuna! 💻
+
+Criamos sites modernos e personalizados para apresentar serviços, fortalecer sua presença digital e facilitar o contato pelo WhatsApp.
+
+✅ Apenas R$297, pagamento único
+✅ Sem mensalidade obrigatória
+✅ 1 ano de hospedagem incluído
+
+💬 Chame no WhatsApp e veja como funciona!" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=2630026760816630" data-tit="Publys Tech" data-sub="Nichado: Advogados · 1 dia no ar · Ancoragem de preço" data-img="01-pesquisa/criativos/quadros/310.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/310.jpg" alt="Primeiro quadro do anúncio de Publys Tech"><b>Publys Tech</b><span>Ancoragem de preço · 1 dia</span></button><button class="item" data-f="e" data-txt="Quer começar a vender sites, mas não sabe programar ou fazer design?
+
+Com a Valy OS, você escolhe uma cidade e um segmento, encontra negócios que ainda não têm site e cria um site profissional em segundos.
+
+Você ainda conta com ferramentas para ajudar na prospecção, abordagem e organização dos seus clientes.
+
+Crie seu primeiro site grátis e veja na prática como funciona. Sem cartão." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=1465756801723387" data-tit="Valy" data-sub="Ensina a vender · 4 dias no ar · Ensina a vender sites" data-img="01-pesquisa/criativos/quadros/232.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/232.jpg" alt="Primeiro quadro do anúncio de Valy"><b>Valy</b><span>Ensina a vender sites · 4 dias</span></button><button class="item" data-f="e" data-txt="Pare de complicar.
+
+Toda clínica, restaurante, escritório e salão precisa de um site.
+
+51% das empresas brasileiras não têm site.
+
+Você copia o comando pronto → Cola na IA → Site no ar em 2 cliques. Simples assim.
+
+Meu objetivo é compartilhar com você minha experiência prática: comecei no digital há 7 anos sem formação técnica, e mais de 60 mil alunos já aprenderam IA comigo.
+
+Não precisa saber programar, nem ser designer, nem ter mexido com tecnologia na vida.
+
+Hoje é só R$27 no curso completo. Até eu decidir que volta pra R$397." data-tr="" data-lib="https://www.facebook.com/ads/library/?id=28690360783990403" data-tit="Bruno Gabarra" data-sub="Ensina a vender · 36 dias no ar · Ensina a vender sites" data-img="01-pesquisa/criativos/quadros/82.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/82.jpg" alt="Primeiro quadro do anúncio de Bruno Gabarra"><b>Bruno Gabarra</b><span>Ensina a vender sites · 36 dias</span></button><button class="item" data-f="e" data-txt="Site Pronto em 1 Hora – Mauricio Bandarra" data-tr="" data-lib="https://www.facebook.com/ads/library/?id=29159124320382115" data-tit="Mente Infinita" data-sub="Ensina a vender · 5 dias no ar · Ensina a vender sites" data-img="01-pesquisa/criativos/quadros/223.jpg"><img loading="lazy" src="01-pesquisa/criativos/quadros/223.jpg" alt="Primeiro quadro do anúncio de Mente Infinita"><b>Mente Infinita</b><span>Ensina a vender sites · 5 dias</span></button></div>
+</section>
+
+<section id="ofertas">
+<h2>Ofertas e preços</h2>
+<p class="sub">Preços vistos nos anúncios e nas páginas de destino.</p>
+<div class="tab"><table><thead><tr><th>Faixa</th><th>Modelo</th><th>Quem usa (exemplos)</th></tr></thead><tbody><tr><td><b>R$ 97 a R$ 197, pago uma vez</b></td><td>Site de uma página feito rápido para um nicho só</td><td>Elismael Santos, psicólogos, R$ 97 em 48 h · JJ company, landing para advogados, R$ 147 · Mago Digital, barbearias, R$ 197 em 60 min</td></tr><tr><td><b>R$ 297 a R$ 599, pago uma vez</b></td><td>A faixa mais comum. Quase sempre com &quot;sem mensalidade&quot; e 1º ano de hospedagem</td><td>Publys Tech, mesmo anúncio para advogados, psicólogos e dentistas, R$ 297 · Clinarte, saúde, a partir de R$ 429 · Advogar Digital, a partir de R$ 450 · Cliente em 3 Passos, R$ 497 em 3x · Vytron, R$ 599,90</td></tr><tr><td><b>R$ 997 a R$ 3.997, em pacotes</b></td><td>Agência de nicho com 3 níveis e sinal de 50%</td><td>LPVende, a partir de R$ 1.890 com prévia antes do 2º pagamento · Clinarte na página: R$ 997, R$ 2.497 e R$ 3.997 · Sabrina, cerimonialistas, R$ 997 e R$ 1.597</td></tr><tr><td><b>R$ 49,90 a R$ 99 por mês</b></td><td>A criação entra na mensalidade</td><td>Fantilabs, dentistas, R$ 99/mês · Byte a Byte, clínicas, R$ 59,90/mês · Brain, &quot;site caro é coisa do passado&quot;, R$ 90/mês · OPS Empresas, &quot;website por assinatura&quot;, R$ 60/mês sem taxa de adesão</td></tr><tr><td><b>Grátis, cobrando depois</b></td><td>Cria sem custo e ganha na hospedagem ou no plano</td><td>Notus Studio, psicólogos, com quiz de 1 minuto para filtrar · Rivor e Tony Zimo, empresas em geral</td></tr><tr><td><b>Plataforma do nicho</b></td><td>O site vem dentro de um sistema que o profissional já paga</td><td>Jusfy, advogados, com convênio da OAB, 58 anúncios · WebPsi, psicólogos, 12x R$ 35 · Imóvel Guide, corretores, R$ 89,90/mês · Brovia, R$ 49,90/mês · ImoTools, imobiliárias, 52 anúncios</td></tr></tbody></table></div>
+<div class="card" style="margin-top:16px"><h3>Mecânicas de oferta que aparecem</h3>
+<ul class="lista">
+<li><b>Sem mensalidade</b> como diferencial do preço único (Douglas Business, 250 dias no ar: "você paga uma só vez") e <b>1º ano de hospedagem incluso</b> (Publys).</li>
+<li><b>Prazo curto:</b> 60 minutos (barbearia), 24 h, 48 h, 3 dias, 7 dias. Insites roda "a partir de R$ 299, em até 7 dias" há 267 dias, o mais antigo entre quem vende site.</li>
+<li><b>Prévia antes de pagar:</b> Flux ("quer ver o site novo da sua clínica antes de pagar?"), LPVende (2ª metade só depois da prévia), Cruzetta ("só paga depois de ver pronta", R$ 99) e Conexão Total ("pague somente na entrega", R$ 99).</li>
+<li><b>Diagnóstico grátis</b> como porta de entrada: LPVende (20 a 30 min no WhatsApp), Flux (por escrito em 48 h), Aprimora (check-up do site atual).</li>
+<li><b>Três pacotes</b> lado a lado: Flash Sites R$ 697, R$ 1.497 e R$ 2.197; Clinarte R$ 997, R$ 2.497 e R$ 3.997.</li>
+<li><b>Ancoragem:</b> "site caro é coisa do passado, R$ 3.000" contra R$ 90/mês; "de R$ 597 por R$ 99" na Black Friday.</li>
+<li><b>Itens de nicho somados ao site:</b> Google Meu Negócio, identidade visual de advogado (Ilimitte), cartão com QR Code, logo e mascote por R$ 99 (Escolha seu Site).</li>
+<li><b>Escassez com regra:</b> LPVende limita a 8 projetos ao mesmo tempo, com 25% até 30/11.</li>
+</ul></div>
+</section>
+
+<section id="funil">
+<h2>Para onde o clique leva</h2>
+<p class="sub">Contando cada vendedor uma vez, pelo destino da maioria dos anúncios.</p>
+<div class="duas">
+<div class="card"><h3>Nichados</h3><p class="sub">42 vendedores</p><div class="barras"><div class="barra" title="WhatsApp: 20 de 42 (48%)"><span class="b-rot">WhatsApp</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>48%</b> 20</span></div><div class="barra" title="Site ou página: 15 de 42 (36%)"><span class="b-rot">Site ou página</span><span class="b-trilho"><i style="width:75.0%"></i></span><span class="b-val"><b>36%</b> 15</span></div><div class="barra" title="Direct ou Messenger: 4 de 42 (10%)"><span class="b-rot">Direct ou Messenger</span><span class="b-trilho"><i style="width:20.0%"></i></span><span class="b-val"><b>10%</b> 4</span></div><div class="barra" title="Instagram: 3 de 42 (7%)"><span class="b-rot">Instagram</span><span class="b-trilho"><i style="width:15.0%"></i></span><span class="b-val"><b>7%</b> 3</span></div></div></div>
+<div class="card"><h3>Genéricos</h3><p class="sub">73 vendedores</p><div class="barras"><div class="barra" title="WhatsApp: 38 de 73 (52%)"><span class="b-rot">WhatsApp</span><span class="b-trilho"><i style="width:100.0%"></i></span><span class="b-val"><b>52%</b> 38</span></div><div class="barra" title="Site ou página: 18 de 73 (25%)"><span class="b-rot">Site ou página</span><span class="b-trilho"><i style="width:47.4%"></i></span><span class="b-val"><b>25%</b> 18</span></div><div class="barra" title="Instagram: 11 de 73 (15%)"><span class="b-rot">Instagram</span><span class="b-trilho"><i style="width:28.9%"></i></span><span class="b-val"><b>15%</b> 11</span></div><div class="barra" title="Direct ou Messenger: 6 de 73 (8%)"><span class="b-rot">Direct ou Messenger</span><span class="b-trilho"><i style="width:15.8%"></i></span><span class="b-val"><b>8%</b> 6</span></div></div></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>O que as páginas de destino mostram</h3>
+<ul class="lista">
+<li><b>LPVende (psicólogos):</b> diagnóstico grátis em formulário de 4 passos, depois WhatsApp. Sinal de 50%, prévia em 7 a 15 dias úteis, hospedagem opcional de R$ 49 ou R$ 89 por mês. É a única com prova em número (1º lugar no Google para "cardiologista salvador", pelo Search Console).</li>
+<li><b>Clinarte (saúde):</b> três pacotes, 50% na aprovação e 50% na entrega ou 6x, cinco cases com nome do profissional.</li>
+<li><b>Advogar Digital:</b> "landing page pronta em até 3 dias", formulário de briefing (landing, site ou refazer; tem logo ou não). Sem preço na página.</li>
+<li><b>Fonseca Web Studio (nutricionistas):</b> página feita no Lovable, só botões de WhatsApp com mensagem pronta, "pronto em até 7 dias úteis".</li>
+<li><b>Notus Studio (psicólogos, grátis) e Kromma (advogados, quiz):</b> as páginas carregam por código e não abriram na leitura automática.</li>
+</ul></div>
+</section>
+
+<section id="ensina">
+<h2>Quem ensina a vender sites</h2>
+<p class="sub">13 páginas vendem ferramenta ou curso para quem quer vender site. Isso mostra quantas pessoas novas estão entrando nesse mercado, e com IA.</p>
+<ul class="lista">
+<li><b>Valy OS:</b> acha negócios sem site por ramo e cidade no Google Maps, gera o site em 1 minuto e manda o script de abordagem. R$ 697 a R$ 3.497 por ano, garantia de 7 dias. Criativo: "Mandei o site pra dona do salão. Ela respondeu: Quanto custa?".</li>
+<li><b>Prompts prontos e cursos rápidos:</b> "Site pronto em 1 hora", "3 sites que eu criei com IA em menos de 10 minutos", prompts do Integra Sites, imersão Acelera IA, Lovable ilimitado.</li>
+<li><b>Claude Code para advogados:</b> R$ 148,50 na Black Friday, para o próprio advogado montar o site.</li>
+</ul>
+<div class="aviso">Leitura: site genérico está virando produto barato feito por IA (R$ 90 a R$ 299). Nichar, com texto dentro das regras do conselho e a cena do cliente daquele nicho, é o jeito que os vendedores estão usando para não brigar só por preço.</div>
+</section>
+
+<section id="testar">
+<h2>O que parece pouco explorado</h2>
+<p class="sub">Raro no recorte indica espaço para testar, mas não prova que funciona: alguém pode ter tentado e parado.</p>
+<ul class="lista">
+<li><b>Garantia:</b> só 1 texto nichado fala em garantia ou risco zero. A Fade&amp;Co (genérica) usa "7 dias de garantia, ou você ama o seu site ou não paga".</li>
+<li><b>Prova com número:</b> só a LPVende mostra resultado medido. Depoimento aparece em 3 de 134 criativos nichados.</li>
+<li><b>Prévia antes de pagar:</b> 8% dos textos nichados. É a resposta direta ao medo de pagar e não gostar.</li>
+<li><b>Aparecer nas respostas de IA (ChatGPT, Gemini):</b> nenhum nichado fala nisso; só a W2 Websites (genérica).</li>
+<li><b>Nichos sem vendedor nichado:</b> restaurantes, salões, oficinas e igrejas. Para eventos, só 1 (cerimonialistas, R$ 997 e R$ 1.597).</li>
+<li><b>Ateliês de noiva e debutante:</b> nenhum vendedor de site para eles. A pesquisa da Lennys mostrou que 59% dos anúncios desses ateliês levam ao WhatsApp e só 3% a um site ou quiz, e o site da Lennys já é um caso pronto para mostrar.</li>
+</ul>
+<div class="card" style="margin-top:16px"><h3>Como seria um teste modelado no que já roda</h3>
+<ol class="passos">
+<li><b>Um nicho só</b> e o nome dele no primeiro segundo ("Ateliê de noivas,", "Psicólogo(a),").</li>
+<li><b>Arte de dor</b> com a busca do cliente do nicho (o que a noiva encontra quando pesquisa o ateliê) e <b>arte de mockup</b> com um site real do nicho.</li>
+<li><b>Preço único na faixa de R$ 297 a R$ 597</b>, sem mensalidade no anúncio, e hospedagem cobrada à parte depois.</li>
+<li><b>Prévia antes de pagar ou garantia</b>, que quase ninguém usa.</li>
+<li><b>WhatsApp como destino</b>, igual à maioria, com uma pergunta de filtro antes do preço.</li>
+</ol></div>
+</section>
+
+<section id="players">
+<h2>Os players nichados</h2>
+<p class="sub">Clique no cabeçalho para ordenar. O nome abre todos os anúncios ativos da página na Biblioteca.</p>
+<div class="tab"><table id="tabela"><thead><tr><th data-k="0">Player</th><th data-k="1">Nicho</th><th data-k="2">Tipo</th><th data-k="3" class="num">Anúncios ativos</th><th data-k="4" class="num">Mais antigo (dias)</th><th data-k="5">Destino principal</th></tr></thead><tbody><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=106645949186657" target="_blank" rel="noopener">MSYS Imob</a></td><td>Imobiliárias</td><td>Plataforma do nicho com site</td><td class="num">30</td><td class="num">279</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=463413310482921" target="_blank" rel="noopener">Agência Digital Talismã</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">18</td><td class="num">230</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=948621751669753" target="_blank" rel="noopener">PetterJones</a></td><td>Saúde</td><td>Vende site para o nicho</td><td class="num">5</td><td class="num">166</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=101752272645720" target="_blank" rel="noopener">TCO</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">17</td><td class="num">155</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=579689098569351" target="_blank" rel="noopener">WebPsi - Gestor de consultório e criador de sites</a></td><td>Psicólogos</td><td>Plataforma do nicho com site</td><td class="num">30</td><td class="num">138</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=194384667272417" target="_blank" rel="noopener">Byte a Byte - Agência Digital</a></td><td>Clínicas</td><td>Vende site para o nicho</td><td class="num">5</td><td class="num">122</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=684171231435545" target="_blank" rel="noopener">Sites Modernos</a></td><td>Psicólogos</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">119</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=270603109623962" target="_blank" rel="noopener">CODE 49 Brasil</a></td><td>Imobiliárias</td><td>Plataforma do nicho com site</td><td class="num">15</td><td class="num">117</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=111651424736191" target="_blank" rel="noopener">Ilimitte Marketing Jurídico</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">4</td><td class="num">116</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=720682177789429" target="_blank" rel="noopener">JJ company</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">74</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=226591223877451" target="_blank" rel="noopener">ImoTools</a></td><td>Imobiliárias</td><td>Vende site para o nicho</td><td class="num">52</td><td class="num">74</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1378192032033709" target="_blank" rel="noopener">Superadmin</a></td><td>Imobiliárias</td><td>Plataforma do nicho com site</td><td class="num">4</td><td class="num">54</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1144335292107385" target="_blank" rel="noopener">André Igor  Criação de Sites Tráfego pago</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">52</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1199158716622111" target="_blank" rel="noopener">Prime Asessoria</a></td><td>Clínicas</td><td>Vende site para o nicho</td><td class="num">4</td><td class="num">51</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=103877865803756" target="_blank" rel="noopener">Jusfy Tecnologia</a></td><td>Advogados</td><td>Plataforma do nicho com site</td><td class="num">58</td><td class="num">47</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1152489471275827" target="_blank" rel="noopener">PHLM Gestão de Marketing &amp; Tecnologia</a></td><td>Nutricionistas</td><td>Vende site para o nicho</td><td class="num">8</td><td class="num">36</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=201460156390031" target="_blank" rel="noopener">Psicoflow</a></td><td>Psicólogos</td><td>Plataforma do nicho com site</td><td class="num">3</td><td class="num">32</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1352488707951554" target="_blank" rel="noopener">FREEL</a></td><td>Profissional liberal</td><td>Plataforma do nicho com site</td><td class="num">8</td><td class="num">29</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1025319177342118" target="_blank" rel="noopener">I4 Company</a></td><td>Corretores</td><td>Vende site para o nicho</td><td class="num">4</td><td class="num">21</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=196187450429424" target="_blank" rel="noopener">Aprimora Web</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">11</td><td class="num">17</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=2230146363926714" target="_blank" rel="noopener">Imóvel Guide</a></td><td>Corretores</td><td>Plataforma do nicho com site</td><td class="num">13</td><td class="num">17</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1459962877191701" target="_blank" rel="noopener">Almeida Studio Mkt</a></td><td>Saúde</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">17</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=100783231733847" target="_blank" rel="noopener">Advogar Digital</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">16</td><td class="num">16</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=951701678034380" target="_blank" rel="noopener">Brovia</a></td><td>Corretores</td><td>Plataforma do nicho com site</td><td class="num">1</td><td class="num">12</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1478655248656454" target="_blank" rel="noopener">Mago Digital</a></td><td>Barbearias</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">12</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=108751238905112" target="_blank" rel="noopener">Laura Santiago</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">12</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=607016252499080" target="_blank" rel="noopener">Rentup Sistema Imobiliário</a></td><td>Aluguel de temporada</td><td>Plataforma do nicho com site</td><td class="num">5</td><td class="num">11</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1266920799847664" target="_blank" rel="noopener">Oxo Soluções Digitais</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">10</td><td>Direct ou Messenger</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1326052227266691" target="_blank" rel="noopener">LWCode Soluções para Internet</a></td><td>Imobiliárias</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">9</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1316504164890247" target="_blank" rel="noopener">EdxWeb </a></td><td>Vários nichos citados</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">9</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1101900083011933" target="_blank" rel="noopener">Google Primeira Página</a></td><td>Dentistas</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">9</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1202204276310470" target="_blank" rel="noopener">Cliente em 3 Passos</a></td><td>Quem vende pelo WhatsApp</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">8</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=832107853323070" target="_blank" rel="noopener">Elismael Santos</a></td><td>Psicólogos</td><td>Vende site para o nicho</td><td class="num">10</td><td class="num">8</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=869327566273515" target="_blank" rel="noopener">wpcriandositesdigital</a></td><td>Saúde</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">8</td><td>Instagram</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1284959341359391" target="_blank" rel="noopener">Bernardo Wainer</a></td><td>Arquitetos</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">5</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=333150533373054" target="_blank" rel="noopener">Expresso 3 Marketing Digital</a></td><td>Pet e veterinária</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">5</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1330001710206683" target="_blank" rel="noopener">Imopage</a></td><td>Corretores</td><td>Plataforma do nicho com site</td><td class="num">1</td><td class="num">5</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1120624081139957" target="_blank" rel="noopener">LPVende</a></td><td>Psicólogos</td><td>Vende site para o nicho</td><td class="num">4</td><td class="num">4</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1475126799024818" target="_blank" rel="noopener">Fantilabs</a></td><td>Dentistas</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">4</td><td>Direct ou Messenger</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=309091142288540" target="_blank" rel="noopener">Caio Santana - Google e Sites para Empresas</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">4</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=324617574078790" target="_blank" rel="noopener">EnzoGomes</a></td><td>Cidade (São Roque)</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">4</td><td>Direct ou Messenger</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1311746145366448" target="_blank" rel="noopener">clinarteagencia</a></td><td>Saúde</td><td>Vende site para o nicho</td><td class="num">2</td><td class="num">3</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=968771972988736" target="_blank" rel="noopener">Notus Studio</a></td><td>Psicólogos</td><td>Vende site para o nicho</td><td class="num">9</td><td class="num">3</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=986045484583427" target="_blank" rel="noopener">Rudhá Dev</a></td><td>Psicólogos</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">3</td><td>Instagram</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=115475980324266" target="_blank" rel="noopener">RF Digital</a></td><td>Esquadrias de alumínio</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">3</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1372355719285965" target="_blank" rel="noopener">Ritmo</a></td><td>Personal trainers</td><td>Plataforma do nicho com site</td><td class="num">1</td><td class="num">3</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1324394810766121" target="_blank" rel="noopener">Flux Mídia e Publicidade</a></td><td>Clínicas</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">3</td><td>Direct ou Messenger</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=423348537519749" target="_blank" rel="noopener">Elévant • Sites • Agência de IA • Negócios Digitais</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">2</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1435710152962301" target="_blank" rel="noopener">luiseduardo.dev</a></td><td>Saúde</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">2</td><td>Instagram</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1346520728541867" target="_blank" rel="noopener">Betel Digital </a></td><td>Região (MG)</td><td>Vende site para o nicho</td><td class="num">1</td><td class="num">1</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1376835202190775" target="_blank" rel="noopener">Publys Tech</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">4</td><td class="num">1</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1352843584590278" target="_blank" rel="noopener">Kromma </a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">1</td><td>Site ou página</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=793290953872147" target="_blank" rel="noopener">Sabrina Oliveiraa</a></td><td>Eventos e cerimonial</td><td>Vende site para o nicho</td><td class="num">3</td><td class="num">1</td><td>WhatsApp</td></tr><tr><td><a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&view_all_page_id=1433577579841302" target="_blank" rel="noopener">Vytron Solv</a></td><td>Advogados</td><td>Vende site para o nicho</td><td class="num">5</td><td class="num">1</td><td>WhatsApp</td></tr></tbody></table></div>
+</section>
+
+<section id="metodo">
+<h2>Limites e fontes</h2>
+<div class="card"><h3>Como foi feito</h3>
+<ul class="lista">
+<li>3.868 anúncios ativos no Brasil, em 41 buscas na Biblioteca de Anúncios da Meta, em 21/11/2026 (até 120 anúncios por busca), mais todos os anúncios ativos de 54 páginas nichadas (até 60 por página).</li>
+<li>Filtrei por palavras de quem vende site e li as 207 páginas que sobraram, uma a uma, para separar nichado, genérico, plataforma e quem ensina.</li>
+<li>Vi o primeiro quadro de 313 criativos únicos e transcrevi os 40 vídeos mais antigos (33 têm fala). Li 10 páginas de destino.</li>
+</ul></div>
+<div class="card"><h3>O que não foi obtido</h3>
+<ul class="lista">
+<li><b>Gasto e vendas:</b> a Meta não mostra para anúncio comercial. Tempo no ar é só um indício.</li>
+<li><b>Época:</b> semana da Black Friday. Muita coisa tem menos de 10 dias no ar e pode sumir.</li>
+<li><b>Busca por palavra:</b> quem vende site sem usar essas palavras no texto ficou de fora.</li>
+<li><b>Conversa no WhatsApp:</b> não contatei nenhum vendedor. Preço e fechamento de quem leva direto ao WhatsApp ficaram sem ver.</li>
+<li><b>Transcrição automática:</b> tem erros. As frases de vídeo são aproximadas.</li>
+</ul></div>
+<p class="sub">Dados brutos em <code>01-pesquisa/dados</code>, folhas de criativos em <code>01-pesquisa/criativos</code>, scripts em <code>scripts</code>.</p>
+</section>
+</main>
+<dialog id="dl"><div class="dl"><div class="dl-top"><div><h3 id="dl-tit"></h3><p class="sub" id="dl-sub" style="margin:0"></p></div><button class="fechar" onclick="dl.close()">Fechar</button></div>
+<div style="display:grid;grid-template-columns:180px 1fr;gap:16px;margin-top:14px" id="dl-corpo"><img id="dl-img" style="width:100%;border-radius:8px" alt=""><div>
+<h4>Texto do anúncio</h4><p id="dl-txt"></p><h4 id="dl-trh">Transcrição automática, com erros</h4><p id="dl-tr"></p>
+<a class="botao" id="dl-lib" target="_blank" rel="noopener">Ver na Biblioteca de Anúncios</a></div></div></div></dialog>
+<script>
+const dl=document.getElementById('dl');
+document.querySelectorAll('.item').forEach(b=>b.addEventListener('click',()=>{
+ const d=b.dataset;document.getElementById('dl-tit').textContent=d.tit;document.getElementById('dl-sub').textContent=d.sub;
+ document.getElementById('dl-img').src=d.img;document.getElementById('dl-txt').textContent=d.txt||'(sem texto)';
+ document.getElementById('dl-tr').textContent=d.tr;document.getElementById('dl-trh').style.display=d.tr?'':'none';
+ document.getElementById('dl-lib').href=d.lib;dl.showModal();}));
+document.querySelectorAll('.filtros button').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.filtros button').forEach(x=>x.classList.toggle('on',x===b));
+ document.querySelectorAll('#grade .item').forEach(i=>i.style.display=(b.dataset.f==='todos'||i.dataset.f===b.dataset.f)?'':'none');}));
+document.querySelectorAll('#tabela th').forEach(th=>th.addEventListener('click',()=>{
+ const k=+th.dataset.k,tb=th.closest('table').tBodies[0],rs=[...tb.rows],num=th.classList.contains('num');
+ const asc=th.dataset.o!=='a';th.dataset.o=asc?'a':'d';
+ rs.sort((a,b)=>{let x=a.cells[k].textContent,y=b.cells[k].textContent;if(num){x=+x;y=+y;return asc?x-y:y-x}return asc?x.localeCompare(y,'pt'):y.localeCompare(x,'pt')});
+ rs.forEach(r=>tb.appendChild(r));}));
+const links=[...document.querySelectorAll('.lado nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{let i=0;secs.forEach((s,j)=>{if(s.getBoundingClientRect().top<120)i=j});links.forEach((a,j)=>a.classList.toggle('ativo',j===i))});
+if(matchMedia('(max-width:860px)').matches)document.getElementById('dl-corpo').style.gridTemplateColumns='1fr';
+</script></body></html>

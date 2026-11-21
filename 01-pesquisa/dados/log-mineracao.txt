@@ -1,0 +1,110 @@
+Mineração — 17 tarefa(s) | pais=BR | status=active | midia=all | max=120/tarefa
+Fonte: Biblioteca pública (o MCP não entrega copy, criativo nem landing page)
+
+== busca: site para advogados
+    120 anúncios
+
+== busca: site para dentistas
+    120 anúncios
+
+== busca: site para psicólogos
+    120 anúncios
+
+== busca: site para clínicas
+    120 anúncios
+
+== busca: site para médicos
+    120 anúncios
+
+== busca: site para nutricionistas
+    115 anúncios
+
+== busca: site para restaurantes
+    120 anúncios
+
+== busca: site para imobiliárias
+    120 anúncios
+
+== busca: site para corretores
+    120 anúncios
+
+== busca: site para salão de beleza
+    120 anúncios
+
+== busca: site para arquitetos
+    120 anúncios
+
+== busca: site para igrejas
+    120 anúncios
+
+== busca: site para oficinas
+    120 anúncios
+
+== busca: site para fisioterapeutas
+     76 anúncios
+
+== busca: criação de sites
+    120 anúncios
+
+== busca: site profissional
+    120 anúncios
+
+== busca: landing page
+    120 anúncios
+
+=== RESULTADO ===
+anúncios únicos: 1883   |   marcas: 1069
+arquivo: C:\Users\Familia\Desktop\Pesquisa de Mercado\Raio-X Venda de Sites BR\01-pesquisa\dados\mineracao-2026-11-21-01-43-21.json
+
+=== ESCALA (tempo no ar · variações · nº de anúncios) ===
+ ord  dias  var  ads  sust  marca / domínio
+   1     8  263   15    --   Elo Conference  → eloconferencia.com
+   2    12   49   28    --   Jusfy Tecnologia  → page.jusfy.com.br
+   3   468   12    7   SIM  Eng. Victor Brience  → experttcursos.com.br
+   4   136   31   22   SIM  Casoca  → lp.casoca.com.br
+   5   316   12   10   SIM  Reeve Yew  → freedombusiness.io
+   6   484    6    2   SIM  Plano Sempre  → api.whatsapp.com
+   7   448    3    3   SIM  Moradia da Saúde  → moradiadasaude.com.br
+   8   604    3    3   SIM  Secovi RS  → secovirsagademi.com.br
+   9   431    4    2   SIM  UMC - Uberlândia Medical Center  → umcenter.com.br
+  10   412    4    2   SIM  Tecido Alves  → tecidoalves.com
+  11   760    3    2   SIM  Espaço Aura  → instagram.com
+  12   911    3    2   SIM  Refrisol  → refrisol.com.br
+  13   501    3    2   SIM  Big Park Brinquedos  → api.whatsapp.com
+  14   528    4    1   SIM  J. Pozeti Advogados  → api.whatsapp.com
+  15   590    2    2   SIM  Farmácia de Manipulação Flor de Amabilis  → api.whatsapp.com
+sust = passou de 60 dias ininterruptos no ar (o anúncio já se pagou)
+
+=== COBERTURA DOS CAMPOS ===
+1883/1883  adArchiveId
+1883/1883  adLibraryUrl
+1883/1883  pageId
+1883/1883  pageName
+1883/1883  pageUrl
+1857/1883  pageProfilePictureUrl
+1883/1883  pageCategories
+1883/1883  pageLikeCount
+1883/1883  isActive
+1883/1883  startDate
+1883/1883  endDate
+1883/1883  platforms
+1860/1883  bodyText
+1341/1883  title
+1838/1883  ctaText
+1838/1883  ctaType
+1831/1883  linkUrl
+1830/1883  linkDomain
+1814/1883  linkCaption
+ 728/1883  linkDescription
+1883/1883  displayFormat
+ 861/1883  imageUrls
+1038/1883  videoUrls
+1038/1883  videoPreviewUrls
+1883/1883  categories
+1883/1883  containsAiMedia
+  15/1883  impressions
+   2/1883  spend
+   2/1883  currency
+1883/1883  gatedType
+1644/1883  collationCount
+ 506/1883  cardsCount

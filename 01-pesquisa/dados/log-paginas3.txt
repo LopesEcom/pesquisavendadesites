@@ -1,0 +1,96 @@
+Mineração — 13 tarefa(s) | pais=BR | status=active | midia=all | max=60/tarefa
+Fonte: Biblioteca pública (o MCP não entrega copy, criativo nem landing page)
+
+== pagina: 324617574078790
+      1 anúncios
+
+== pagina: 1346520728541867
+      1 anúncios
+
+== pagina: 103877865803756
+     30 anúncios
+
+== pagina: 579689098569351
+     30 anúncios
+
+== pagina: 201460156390031
+      3 anúncios
+
+== pagina: 1378192032033709
+      4 anúncios
+
+== pagina: 270603109623962
+     15 anúncios
+
+== pagina: 607016252499080
+      5 anúncios
+
+== pagina: 106645949186657
+     30 anúncios
+
+== pagina: 2230146363926714
+     13 anúncios
+
+== pagina: 951701678034380
+      1 anúncios
+
+== pagina: 1330001710206683
+      1 anúncios
+
+== pagina: 1352488707951554
+      8 anúncios
+
+=== RESULTADO ===
+anúncios únicos: 142   |   marcas: 13
+arquivo: C:\Users\Familia\Desktop\Pesquisa de Mercado\Raio-X Venda de Sites BR\01-pesquisa\dados\paginas3\mineracao-2026-11-21-02-23-25.json
+
+=== ESCALA (tempo no ar · variações · nº de anúncios) ===
+ ord  dias  var  ads  sust  marca / domínio
+   1   279   55   30   SIM  MSYS Imob  → lp.msysimob.com.br
+   2   138   34   30   SIM  WebPsi - Gestor de consultório e criador de sites  → webpsi.com.br
+   3    47   42   30    --   Jusfy Tecnologia  → jusfy.com.br
+   4   117   21   15   SIM  CODE 49 Brasil  → code49.com.br
+   5    17   13   13    --   Imóvel Guide  → oferta.imovelguide.com.br
+   6    29    8    8    --   FREEL  → freel.com.br
+   7    54    6    4    --   Superadmin  → superadmin.ia.br
+   8    11    5    5    --   Rentup Sistema Imobiliário  → rentupimob.com.br
+   9    32    3    3    --   Psicoflow  → fluven.esaas.io
+  10    12    1    1    --   Brovia  → api.whatsapp.com
+  11     5    1    1    --   Imopage  → imopage.com.br
+  12     4    1    1    --   EnzoGomes
+  13     1    1    1    --   Betel Digital   → api.whatsapp.com
+sust = passou de 60 dias ininterruptos no ar (o anúncio já se pagou)
+
+=== COBERTURA DOS CAMPOS ===
+ 142/142  adArchiveId
+ 142/142  adLibraryUrl
+ 142/142  pageId
+ 142/142  pageName
+ 142/142  pageUrl
+ 142/142  pageProfilePictureUrl
+ 142/142  pageCategories
+ 142/142  pageLikeCount
+ 142/142  isActive
+ 142/142  startDate
+ 142/142  endDate
+ 142/142  platforms
+ 140/142  bodyText
+ 130/142  title
+ 142/142  ctaText
+ 142/142  ctaType
+ 141/142  linkUrl
+ 141/142  linkDomain
+ 141/142  linkCaption
+  76/142  linkDescription
+ 142/142  displayFormat
+  81/142  imageUrls
+  64/142  videoUrls
+  64/142  videoPreviewUrls
+ 142/142  categories
+ 142/142  containsAiMedia
+   9/142  impressions
+   0/142  spend
+   0/142  currency
+ 142/142  gatedType
+ 103/142  collationCount
+  52/142  cardsCount

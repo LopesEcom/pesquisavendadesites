@@ -1,0 +1,119 @@
+Mineração — 20 tarefa(s) | pais=BR | status=active | midia=all | max=120/tarefa
+Fonte: Biblioteca pública (o MCP não entrega copy, criativo nem landing page)
+
+== busca: criamos sites
+    120 anúncios
+
+== busca: crio sites
+     73 anúncios
+
+== busca: sites para advogados
+     64 anúncios
+
+== busca: site para advogado
+    120 anúncios
+
+== busca: site para psicólogo
+    120 anúncios
+
+== busca: site para dentista
+    120 anúncios
+
+== busca: site para clínica
+    120 anúncios
+
+== busca: site para médico
+    120 anúncios
+
+== busca: site para nutricionista
+    120 anúncios
+
+== busca: site para fisioterapeuta
+    120 anúncios
+
+== busca: site para corretor de imóveis
+    120 anúncios
+
+== busca: site para restaurante
+    120 anúncios
+
+== busca: site para barbearia
+    120 anúncios
+
+== busca: site para estética
+    120 anúncios
+
+== busca: site para arquiteto
+    120 anúncios
+
+== busca: site para igreja
+    120 anúncios
+
+== busca: site para pequenas empresas
+     81 anúncios
+
+== busca: site em 7 dias
+     29 anúncios
+
+== busca: site pronto
+     30 anúncios
+
+== busca: vender sites
+     23 anúncios
+
+=== RESULTADO ===
+anúncios únicos: 1936   |   marcas: 1136
+arquivo: C:\Users\Familia\Desktop\Pesquisa de Mercado\Raio-X Venda de Sites BR\01-pesquisa\dados\leva2\mineracao-2026-11-21-02-01-01.json
+
+=== ESCALA (tempo no ar · variações · nº de anúncios) ===
+ ord  dias  var  ads  sust  marca / domínio
+   1    62  290   10   SIM  Mariane Barbosa  → api.whatsapp.com
+   2   638   85   15   SIM  HAPPY TOURS Portugal  → happy-tours-portugal.com
+   3    92  147    7   SIM  Seiko Brasil  → seikowatches.com
+   4   975   41   12   SIM  Terpell Embalagens  → terpell.com.br
+   5   448   21   11   SIM  Moradia da Saúde  → moradiadasaude.com.br
+   6     7   64   21    --   PSICODOC  → psicodoc.site
+   7   467   14    6   SIM  Danielle Bartoly
+   8   619   12    6   SIM  CentroMeb  → centromeb.com.br
+   9   397    8    6   SIM  InfinitePay  → play.google.com
+  10  1286    9    5   SIM  APA Pau Brasil  → apapaubrasil.com
+  11   828    7    5   SIM  Gastromed Paranavaí  → instagram.com
+  12   395    6    4   SIM  Ricardo Hamdan Cozinha Árabe  → instagram.com
+  13   136   26   18   SIM  Casoca  → lp.casoca.com.br
+  14   616    3    3   SIM  Involve Bordados  → api.whatsapp.com
+  15   850    4    2   SIM  Sabor Saúde Sorocaba  → menusaborsaude.com.br
+sust = passou de 60 dias ininterruptos no ar (o anúncio já se pagou)
+
+=== COBERTURA DOS CAMPOS ===
+1936/1936  adArchiveId
+1936/1936  adLibraryUrl
+1936/1936  pageId
+1936/1936  pageName
+1936/1936  pageUrl
+1920/1936  pageProfilePictureUrl
+1936/1936  pageCategories
+1936/1936  pageLikeCount
+1936/1936  isActive
+1936/1936  startDate
+1936/1936  endDate
+1936/1936  platforms
+1901/1936  bodyText
+1274/1936  title
+1882/1936  ctaText
+1882/1936  ctaType
+1867/1936  linkUrl
+1867/1936  linkDomain
+1853/1936  linkCaption
+ 766/1936  linkDescription
+1936/1936  displayFormat
+ 720/1936  imageUrls
+1233/1936  videoUrls
+1232/1936  videoPreviewUrls
+1936/1936  categories
+1936/1936  containsAiMedia
+  60/1936  impressions
+   2/1936  spend
+   2/1936  currency
+1936/1936  gatedType
+1699/1936  collationCount
+ 449/1936  cardsCount
